@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Media Store</title>
+    <title>Smart Best</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
-    <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
            <div class="col-md-6 offer"><!-- col-md-6 offer Begin -->
                
                <a href="#" class="btn btn-success btn-sm">Welcome</a>
-               <a href="checkout.php">4 Items In Your Cart | Total Price: $300 </a>
+               <a href="cart.php">4 Items In Your Cart | Total Price: $300 </a>
                
            </div><!-- col-md-6 offer Finish -->
            
@@ -35,7 +35,7 @@
                        <a href="cart.php">Go To Cart</a>
                    </li>
                    <li>
-                       <a href="checkout.php">Login</a>
+                       <a href="login.php">Login</a>
                    </li>
                    
                </ul><!-- menu Finish -->
@@ -54,8 +54,8 @@
                
                <a href="index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
                    
-                   <img src="images/ecom-store-logo.png" alt="Media Logo" class="hidden-xs">
-                   <img src="images/ecom-store-logo-mobile.png" alt="Media Logo Mobile" class="visible-xs">
+                   <img src="images/logo.png" alt="Logo" style="height:70px" class="hidden-xs">
+
                    
                </a><!-- navbar-brand home Finish -->
                
@@ -233,7 +233,7 @@
                        
                        <h3><a href="#">Best Offer</a></h3>
                        
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                       <p>Get exclusive online shopping deals and offers on countless number of items on Smart Best. Subscribe to regular alerts for deal of the day on your favourite phones.</p>
                        
                    </div><!-- box same-height Finish -->
                    
@@ -251,7 +251,7 @@
                        
                        <h3><a href="#">Best Prices</a></h3>
                        
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                       <p>Best Brands LOWEST Prices We guarantee it! Buy Now at Best Prices currently online. We guarantee it!</p>
                        
                    </div><!-- box same-height Finish -->
                    
@@ -269,7 +269,7 @@
                        
                        <h3><a href="#">100% Original</a></h3>
                        
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                       <p>All our products are 100% genuine, original and it comes with warranty   </p>
                        
                    </div><!-- box same-height Finish -->
                    
@@ -281,7 +281,6 @@
        
    </div><!-- #advantages Finish -->
 
-   x
     <?php 
     
     include("includes/footer.php");

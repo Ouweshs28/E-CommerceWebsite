@@ -17,8 +17,8 @@
                 <h4>User Section</h4>
                 
                 <ul><!-- ul Begin -->
-                    <li><a href="checkout.php">Login</a></li>
-                    <li><a href="customer_register.php">Register</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="register.php">Register</a></li>
                 </ul><!-- ul Finish -->
                 
                 <hr class="hidden-md hidden-lg hidden-sm">
@@ -33,8 +33,8 @@
                     <li><a href="#">Apple</a></li>
                     <li><a href="#">Samsung</a></li>
                     <li><a href="#">Oneplus</a></li>
-                    <li><a href="#">HTC</a></li>
-                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Huawei</a></li>
                 </ul><!-- ul Finish -->
                 
                 <hr class="hidden-md hidden-lg">
@@ -47,7 +47,7 @@
                 
                 <p><!-- p Start -->
                     
-                    <strong>Media inc.</strong>
+                    <strong>Smart Best INC.</strong>
                     <br/>Rodrigues
                     <br/>Quatre coco
                     <br/>999
@@ -89,10 +89,10 @@
                 <h4>Keep In Touch</h4>
                 
                 <p class="social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-google-plus"></a>
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-google-plus"></a>
                     <a href="#" class="fa fa-envelope"></a>
                 </p>
                 
@@ -106,7 +106,7 @@
     <div class="container"><!-- container Begin -->
         <div class="col-md-6"><!-- col-md-6 Begin -->
             
-            <p class="pull-left">&copy; 2020 Media Store All Rights Reserve</p>
+            <p class="pull-left">&copy; 2020 Smart Best All Rights Reserve</p>
             
         </div><!-- col-md-6 Finish -->
 

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Media Store</title>
+    <title>Register</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
-    <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -35,7 +35,7 @@
                        <a href="cart.php">Go To Cart</a>
                    </li>
                    <li>
-                       <a href="checkout.php">Login</a>
+                       <a href="login.php">Login</a>
                    </li>
                    
                </ul><!-- menu Finish -->
@@ -53,9 +53,8 @@
            <div class="navbar-header"><!-- navbar-header Begin -->
                
                <a href="index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
-                   
-                   <img src="images/ecom-store-logo.png" alt="Media Store Logo" class="hidden-xs">
-                   <img src="images/ecom-store-logo-mobile.png" alt="Media Store Logo Mobile" class="visible-xs">
+
+                   <img src="images/logo.png" alt="Logo" style="height:70px" class="hidden-xs">
                    
                </a><!-- navbar-brand home Finish -->
                
@@ -173,13 +172,13 @@
                
            </div><!-- col-md-3 Finish -->
            
-           <div class="col-md-9"><!-- col-md-9 Begin -->
+           <div>
                
                <div class="box"><!-- box Begin -->
                    
                    <div class="box-header"><!-- box-header Begin -->
                        
-                       <center><!-- center Begin -->
+                       <divgi style="text-align: center;"><!-- center Begin -->
                            
                            <h2> Create your account</h2>
                            
@@ -189,7 +188,7 @@
                                
                            </p><!-- text-muted Finish -->
                            
-                       </center><!-- center Finish -->
+                       </divgi><!-- center Finish -->
                        
                        <form action="register.php" method="post"><!-- form Begin -->
                            
@@ -273,7 +272,7 @@
                    
                </div><!-- box Finish -->
                
-           </div><!-- col-md-9 Finish -->
+           </div>
            
        </div><!-- container Finish -->
    </div><!-- #content Finish -->

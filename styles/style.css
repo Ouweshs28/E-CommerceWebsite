@@ -209,3 +209,7 @@ body{
     margin: 0px;
     
 }
+/*  Sorting button gap fix */
+#sorting{
+    margin-right: 40px;
+}

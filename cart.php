@@ -168,7 +168,7 @@
 
         </div><!-- col-md-12 Finish -->
 
-        <div id="cart" class="col-md-9"><!-- col-md-9 Begin -->
+        <div id="cart" class="col-md-9" style="width: unset"><!-- col-md-9 Begin -->
 
             <div class="box"><!-- box Begin -->
 
@@ -177,119 +177,86 @@
                     <h1>Shopping Cart</h1>
                     <p class="text-muted">You currently have 3 item(s) in your cart</p>
 
-                    <div class="table-responsive"><!-- table-responsive Begin -->
-
-                        <table class="table"><!-- table Begin -->
-
-                            <thead><!-- thead Begin -->
-
-                            <tr><!-- tr Begin -->
-
-                                <th colspan="2">Product</th>
-                                <th>Quantity</th>
-                                <th>Unit Price</th>
-                                <th colspan="1">Delete</th>
-                                <th colspan="2">Sub-Total</th>
-
-                            </tr><!-- tr Finish -->
-
-                            </thead><!-- thead Finish -->
-
-                            <tbody><!-- tbody Begin -->
-
-                            <tr><!-- tr Begin -->
-
-                                <td>
-
-                                    <img class="img-responsive" src="admin/slide_images/slideimages3.jpg">
-
-                                </td>
-
-
-                                <td>
-
-                                    <a href="#">Iphone xr</a>
-
-                                </td>
-
-                                <td>
-
-                                    2
-
-                                </td>
-
-                                <td>
-
-                                    $50
-
-                                </td>
-
-                                <td>
-
-                                    <input type="checkbox" name="remove[]">
-
-                                </td>
-
-                                <td>
-
-                                    $100
-
-                                </td>
-
-                            </tr><!-- tr Finish -->
-
-                            </tbody><!-- tbody Finish -->
-
-                            <tbody><!-- tbody Begin -->
-
-                            <tr><!-- tr Begin -->
-
-
-                            </tr><!-- tr Finish -->
-
-                            </tbody><!-- tbody Finish -->
-
-
-                            <tfoot><!-- tfoot Begin -->
-
-                            <tr><!-- tr Begin -->
-
-                                <th colspan="5">Total</th>
-                                <th colspan="2">$100</th>
-
-                            </tr><!-- tr Finish -->
-
-                            </tfoot><!-- tfoot Finish -->
-
-                        </table><!-- table Finish -->
-
-                    </div><!-- table-responsive Finish -->
-
-                    <div class="box-footer"><!-- box-footer Begin -->
-
-                        <div class="pull-left"><!-- pull-left Begin -->
-
-                            <a href="index.php" class="btn btn-default"><!-- btn btn-default Begin -->
-
-                                <i class="fa fa-chevron-left"></i> Continue Shopping
-
-                            </a><!-- btn btn-default Finish -->
-
-                        </div><!-- pull-left Finish -->
-
-                        <div class="pull-right"><!-- pull-right Begin -->
-
-
-                            <a href="checkout.php" class="btn btn-primary">
-
-                                Proceed Checkout <i class="fa fa-chevron-right"></i>
-
-                            </a>
-
-                        </div><!-- pull-right Finish -->
-
-                    </div><!-- box-footer Finish -->
-
+                    <div class="container mb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col"> </th>
+                                            <th scope="col">Product</th>
+                                            <th scope="col">Available</th>
+                                            <th scope="col" class="text-center">Quantity</th>
+                                            <th scope="col" class="text-right">Price</th>
+                                            <th> </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                                            <td>Product Name Dada</td>
+                                            <td>In stock</td>
+                                            <td>1</td>
+                                            <td class="text-right">124,90 €</td>
+                                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                                            <td>Product Name Toto</td>
+                                            <td>In stock</td>
+                                            <td>1</td>
+                                            <td class="text-right">33,90 €</td>
+                                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                                            <td>Product Name Titi</td>
+                                            <td>In stock</td>
+                                            <td>1</td>
+                                            <td class="text-right">70,00 €</td>
+                                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Sub-Total</td>
+                                            <td class="text-right">255,90 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Shipping</td>
+                                            <td class="text-right">6,90 €</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><strong>Total</strong></td>
+                                            <td class="text-right"><strong>346,90 €</strong></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col mb-2">
+                                <div class="row">
+                                    <div class="col-sm-12  col-md-6">
+                                        <a href="shop.php" class="btn btn-lg btn-block btn-danger text-uppercase">Continue Shopping</a>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 text-right">
+                                        <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form><!-- form Finish -->
 
             </div><!-- box Finish -->

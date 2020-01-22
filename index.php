@@ -167,8 +167,8 @@
                    <li data-target="#myCarousel" data-slide-to="3"></li>
                    
                </ol><!-- carousel-indicators Finish -->
-               
-               <div class="carousel-inner"><!-- carousel-inner Begin -->
+
+               <div class="carousel-inner" style=" width:100%; height: 500px !important;"><!-- carousel-inner Begin -->
                    
                    <div class="item active">
                        

@@ -29,6 +29,15 @@
             <!--  nav-pills nav-stacked nav Begin  -->
 
             <li>
+                
+                <a href="my_account.php?my_orders">
+                    
+                    <i class="fa fa-list"></i> My Orders
+                    
+                </a>
+            </li>
+
+            <li>
 
                 <a href="logout.php">
 

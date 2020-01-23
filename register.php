@@ -311,14 +311,14 @@
                         <!-- text-center Begin -->
 
                         <button type="submit" name="register" class="btn btn-primary">
-
-                            UPDATE
-
-                        </button>
+                               
+                               <i class="fa fa-user-md"></i> Sign up
+                               
+                               </button>
 
                     </div><!-- text-center Finish -->
 
-                    </form>!-- form Finish -->
+                    </form><!-- form Finish -->
 
                 </div><!-- box-header Finish -->
 

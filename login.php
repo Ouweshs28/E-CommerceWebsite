@@ -238,7 +238,7 @@
 
                                 <label>Password</label>
 
-                                <input type="text" class="form-control" name="c_password" required>
+                                <input type="password" class="form-control" name="c_password" required>
 
                             </div><!-- form-group Finish -->
 
@@ -273,7 +273,7 @@
 
     <script src="js/jquery-331.min.js"></script>
     <script src="js/bootstrap-337.min.js"></script>
-    
+
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,282 +9,309 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
-<div id="top"><!-- Top Begin -->
+    <div id="top">
+        <!-- Top Begin -->
 
-    <div class="container"><!-- container Begin -->
+        <div class="container">
+            <!-- container Begin -->
 
-        <div class="col-md-6 offer"><!-- col-md-6 offer Begin -->
+            <div class="col-md-6 offer">
+                <!-- col-md-6 offer Begin -->
 
-            <a href="#" class="btn btn-success btn-sm">Welcome</a>
-            <a href="cart.php">4 Items In Your Cart | Total Price: Rs 3000 </a>
+                <a href="#" class="btn btn-success btn-sm">Welcome</a>
+                <a href="cart.php">4 Items In Your Cart | Total Price: Rs 3000 </a>
 
-        </div><!-- col-md-6 offer Finish -->
+            </div><!-- col-md-6 offer Finish -->
 
-        <div class="col-md-6"><!-- col-md-6 Begin -->
+            <div class="col-md-6">
+                <!-- col-md-6 Begin -->
 
-            <ul class="menu"><!-- cmenu Begin -->
-
-                <li>
-                    <a href="register.php">Sign up</a>
-                </li>
-                <li>
-                    <a href="checkout.php">My Account</a>
-                </li>
-                <li>
-                    <a href="cart.php">Go To Cart</a>
-                </li>
-                <li>
-                    <a href="login.php">Login</a>
-                </li>
-
-            </ul><!-- menu Finish -->
-
-        </div><!-- col-md-6 Finish -->
-
-    </div><!-- container Finish -->
-
-</div><!-- Top Finish -->
-
-<div id="navbar" class="navbar navbar-default"><!-- navbar navbar-default Begin -->
-
-    <div class="container"><!-- container Begin -->
-
-        <div class="navbar-header"><!-- navbar-header Begin -->
-
-            <a href="index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
-
-                <img src="images/logo.png" alt="Logo" style="height:70px" class="hidden-xs">
-
-            </a><!-- navbar-brand home Finish -->
-
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
-
-                <span class="sr-only">Toggle Navigation</span>
-
-                <i class="fa fa-align-justify"></i>
-
-            </button>
-
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
-
-                <span class="sr-only">Toggle Search</span>
-
-                <i class="fa fa-search"></i>
-
-            </button>
-
-        </div><!-- navbar-header Finish -->
-
-        <div class="navbar-collapse collapse" id="navigation"><!-- navbar-collapse collapse Begin -->
-
-            <div class="padding-nav"><!-- padding-nav Begin -->
-
-                <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
+                <ul class="menu">
+                    <!-- cmenu Begin -->
 
                     <li>
-                        <a href="index.php">Home</a>
+                        <a href="register.php">Sign up</a>
                     </li>
                     <li>
-                        <a href="shop.php">Shop</a>
+                        <a href="checkout.php">My Account</a>
                     </li>
                     <li>
-                        <a href="account.php">My Account</a>
-                    </li>
-                    <li class="active">
-                        <a href="cart.php">Shopping Cart</a>
+                        <a href="cart.php">Go To Cart</a>
                     </li>
                     <li>
-                        <a href="contact.php">Contact Us</a>
+                        <a href="login.php">Login</a>
                     </li>
 
-                </ul><!-- nav navbar-nav left Finish -->
+                </ul><!-- menu Finish -->
 
-            </div><!-- padding-nav Finish -->
+            </div><!-- col-md-6 Finish -->
 
-            <a href="cart.php" class="btn navbar-btn btn-primary right"><!-- btn navbar-btn btn-primary Begin -->
+        </div><!-- container Finish -->
 
-                <i class="fa fa-shopping-cart"></i>
+    </div><!-- Top Finish -->
 
-                <span>4 Items In Your Cart</span>
+    <div id="navbar" class="navbar navbar-default">
+        <!-- navbar navbar-default Begin -->
 
-            </a><!-- btn navbar-btn btn-primary Finish -->
+        <div class="container">
+            <!-- container Begin -->
 
-            <div class="navbar-collapse collapse right"><!-- navbar-collapse collapse right Begin -->
+            <div class="navbar-header">
+                <!-- navbar-header Begin -->
 
-                <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">
-                    <!-- btn btn-primary navbar-btn Begin -->
+                <a href="index.php" class="navbar-brand home">
+                    <!-- navbar-brand home Begin -->
+
+                    <img src="images/logo.png" alt="Logo" style="height:70px" class="hidden-xs">
+
+                </a><!-- navbar-brand home Finish -->
+
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+
+                    <span class="sr-only">Toggle Navigation</span>
+
+                    <i class="fa fa-align-justify"></i>
+
+                </button>
+
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
 
                     <span class="sr-only">Toggle Search</span>
 
                     <i class="fa fa-search"></i>
 
-                </button><!-- btn btn-primary navbar-btn Finish -->
+                </button>
 
-            </div><!-- navbar-collapse collapse right Finish -->
+            </div><!-- navbar-header Finish -->
 
-            <div class="collapse clearfix" id="search"><!-- collapse clearfix Begin -->
+            <div class="navbar-collapse collapse" id="navigation">
+                <!-- navbar-collapse collapse Begin -->
 
-                <form method="get" action="results.php" class="navbar-form"><!-- navbar-form Begin -->
+                <div class="padding-nav">
+                    <!-- padding-nav Begin -->
 
-                    <div class="input-group"><!-- input-group Begin -->
+                    <ul class="nav navbar-nav left">
+                        <!-- nav navbar-nav left Begin -->
 
-                        <input type="text" class="form-control" placeholder="Search" name="user_query" required>
+                        <li>
+                            <a href="index.php">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.php">Shop</a>
+                        </li>
+                        <li>
+                            <a href="account.php">My Account</a>
+                        </li>
+                        <li class="active">
+                            <a href="cart.php">Shopping Cart</a>
+                        </li>
+                        <li>
+                            <a href="contact.php">Contact Us</a>
+                        </li>
 
-                        <span class="input-group-btn"><!-- input-group-btn Begin -->
-                           
-                           <button type="submit" name="search" value="Search" class="btn btn-primary"><!-- btn btn-primary Begin -->
-                               
-                               <i class="fa fa-search"></i>
-                               
-                           </button><!-- btn btn-primary Finish -->
-                           
-                           </span><!-- input-group-btn Finish -->
+                    </ul><!-- nav navbar-nav left Finish -->
 
-                    </div><!-- input-group Finish -->
+                </div><!-- padding-nav Finish -->
 
-                </form><!-- navbar-form Finish -->
+                <a href="cart.php" class="btn navbar-btn btn-primary right">
+                    <!-- btn navbar-btn btn-primary Begin -->
 
-            </div><!-- collapse clearfix Finish -->
+                    <i class="fa fa-shopping-cart"></i>
 
-        </div><!-- navbar-collapse collapse Finish -->
+                    <span>4 Items In Your Cart</span>
 
-    </div><!-- container Finish -->
+                </a><!-- btn navbar-btn btn-primary Finish -->
 
-</div><!-- navbar navbar-default Finish -->
+                <div class="navbar-collapse collapse right">
+                    <!-- navbar-collapse collapse right Begin -->
 
-<div id="content"><!-- #content Begin -->
-    <div class="container"><!-- container Begin -->
-        <div class="col-md-12"><!-- col-md-12 Begin -->
+                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">
+                        <!-- btn btn-primary navbar-btn Begin -->
 
-            <ul class="breadcrumb"><!-- breadcrumb Begin -->
-                <li>
-                    <a href="index.php">Home</a>
-                </li>
-                <li>
-                    Cart
-                </li>
-            </ul><!-- breadcrumb Finish -->
+                        <span class="sr-only">Toggle Search</span>
 
-        </div><!-- col-md-12 Finish -->
+                        <i class="fa fa-search"></i>
 
-        <div id="cart" class="col-md-9" style="width: unset"><!-- col-md-9 Begin -->
+                    </button><!-- btn btn-primary navbar-btn Finish -->
 
-            <div class="box"><!-- box Begin -->
+                </div><!-- navbar-collapse collapse right Finish -->
 
-                <form action="cart.php" method="post" enctype="multipart/form-data"><!-- form Begin -->
+                <div class="collapse clearfix" id="search">
+                    <!-- collapse clearfix Begin -->
 
-                    <h1>Shopping Cart</h1>
-                    <p class="text-muted">You currently have 3 item(s) in your cart</p>
+                    <form method="get" action="results.php" class="navbar-form">
+                        <!-- navbar-form Begin -->
 
-                    <div class="container mb-4">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                        <tr>
-                                            <th scope="col"> </th>
-                                            <th scope="col">Product</th>
-                                            <th scope="col">Available</th>
-                                            <th scope="col" class="text-center">Quantity</th>
-                                            <th scope="col" class="text-right">Price</th>
-                                            <th> </th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                                            <td>Product Name Dada</td>
-                                            <td>In stock</td>
-                                            <td><input class="form-control" type="text" value="1" /></td>
-                                            <td class="text-right">124,90 €</td>
-                                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                                            <td>Product Name Toto</td>
-                                            <td>In stock</td>
-                                            <td><input class="form-control" type="text" value="1" /></td>
-                                            <td class="text-right">33,90 €</td>
-                                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                                            <td>Product Name Titi</td>
-                                            <td>In stock</td>
-                                            <td><input class="form-control" type="text" value="1" /></td>
-                                            <td class="text-right">70,00 €</td>
-                                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>Sub-Total</td>
-                                            <td class="text-right">255,90 €</td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td>Shipping</td>
-                                            <td class="text-right">6,90 €</td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><strong>Total</strong></td>
-                                            <td class="text-right"><strong>346,90 €</strong></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="col mb-2">
-                                <div class="row">
-                                    <div class="col-sm-12  col-md-6">
-                                        <a href="shop.php" class="btn btn-lg btn-block btn-danger text-uppercase">Continue Shopping</a>
+                        <div class="input-group">
+                            <!-- input-group Begin -->
+
+                            <input type="text" class="form-control" placeholder="Search" name="user_query" required>
+
+                            <span class="input-group-btn">
+                                <!-- input-group-btn Begin -->
+
+                                <button type="submit" name="search" value="Search" class="btn btn-primary">
+                                    <!-- btn btn-primary Begin -->
+
+                                    <i class="fa fa-search"></i>
+
+                                </button><!-- btn btn-primary Finish -->
+
+                            </span><!-- input-group-btn Finish -->
+
+                        </div><!-- input-group Finish -->
+
+                    </form><!-- navbar-form Finish -->
+
+                </div><!-- collapse clearfix Finish -->
+
+            </div><!-- navbar-collapse collapse Finish -->
+
+        </div><!-- container Finish -->
+
+    </div><!-- navbar navbar-default Finish -->
+
+    <div id="content">
+        <!-- #content Begin -->
+        <div class="container">
+            <!-- container Begin -->
+            <div class="col-md-12">
+                <!-- col-md-12 Begin -->
+
+                <ul class="breadcrumb">
+                    <!-- breadcrumb Begin -->
+                    <li>
+                        <a href="index.php">Home</a>
+                    </li>
+                    <li>
+                        Cart
+                    </li>
+                </ul><!-- breadcrumb Finish -->
+
+            </div><!-- col-md-12 Finish -->
+
+            <div id="cart" class="col-md-9" style="width: unset">
+                <!-- col-md-9 Begin -->
+
+                <div class="box">
+                    <!-- box Begin -->
+
+                    <form action="cart.php" method="post" enctype="multipart/form-data">
+                        <!-- form Begin -->
+
+                        <h1>Shopping Cart</h1>
+                        <p class="text-muted">You currently have 3 item(s) in your cart</p>
+
+                        <div class="container mb-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"> </th>
+                                                    <th scope="col">Product</th>
+                                                    <th scope="col">Available</th>
+                                                    <th scope="col" class="text-center">Quantity</th>
+                                                    <th scope="col" class="text-right">Price</th>
+                                                    <th> </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                                                    <td>Product Name Dada</td>
+                                                    <td>In stock</td>
+                                                    <td><input class="form-control" type="text" value="1" /></td>
+                                                    <td class="text-right">124,90 €</td>
+                                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                                                    <td>Product Name Toto</td>
+                                                    <td>In stock</td>
+                                                    <td><input class="form-control" type="text" value="1" /></td>
+                                                    <td class="text-right">33,90 €</td>
+                                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                                                    <td>Product Name Titi</td>
+                                                    <td>In stock</td>
+                                                    <td><input class="form-control" type="text" value="1" /></td>
+                                                    <td class="text-right">70,00 €</td>
+                                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Sub-Total</td>
+                                                    <td class="text-right">255,90 €</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>Shipping</td>
+                                                    <td class="text-right">6,90 €</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td><strong>Total</strong></td>
+                                                    <td class="text-right"><strong>346,90 €</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="col-sm-12 col-md-6 text-right">
-                                        <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                                </div>
+                                <div class="col mb-2">
+                                    <div class="row">
+                                        <div class="col-sm-12  col-md-6">
+                                            <a href="shop.php" class="btn btn-lg btn-block btn-danger text-uppercase">Continue Shopping</a>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 text-right">
+                                            <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </form><!-- form Finish -->
+                    </form><!-- form Finish -->
 
-            </div><!-- box Finish -->
-
-
-        </div><!-- product same-height Finish -->
-    </div><!-- col-md-3 col-sm-6 center-responsive Finish -->
-
-</div><!-- #row same-heigh-row Finish -->
-
-</div><!-- col-md-9 Finish -->
+                </div><!-- box Finish -->
 
 
-</div><!-- col-md-3 Finish -->
+            </div><!-- product same-height Finish -->
+        </div><!-- col-md-3 col-sm-6 center-responsive Finish -->
 
-</div><!-- container Finish -->
-</div><!-- #content Finish -->
+    </div><!-- #row same-heigh-row Finish -->
 
-<?php
+    </div><!-- col-md-9 Finish -->
 
-include("includes/footer.php");
 
-?>
+    </div><!-- col-md-3 Finish -->
 
-<script src="js/jquery-331.min.js"></script>
-<script src="js/bootstrap-337.min.js"></script>
+    </div><!-- container Finish -->
+    </div><!-- #content Finish -->
 
+    <?php
+
+    include("includes/footer.php");
+
+    ?>
+
+    <script src="js/jquery-331.min.js"></script>
+    <script src="js/bootstrap-337.min.js"></script>
 
 </body>
+
 </html>

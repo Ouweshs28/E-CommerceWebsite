@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,284 +9,321 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
-<div id="top"><!-- Top Begin -->
+    <div id="top">
+        <!-- Top Begin -->
 
-    <div class="container"><!-- container Begin -->
+        <div class="container">
+            <!-- container Begin -->
 
-        <div class="col-md-6 offer"><!-- col-md-6 offer Begin -->
+            <div class="col-md-6 offer">
+                <!-- col-md-6 offer Begin -->
 
-            <a href="#" class="btn btn-success btn-sm">Welcome</a>
-            <a href="cart.php">4 Items In Your Cart | Total Price: $300 </a>
+                <a href="#" class="btn btn-success btn-sm">Welcome</a>
+                <a href="cart.php">4 Items In Your Cart | Total Price: $300 </a>
 
-        </div><!-- col-md-6 offer Finish -->
+            </div><!-- col-md-6 offer Finish -->
 
-        <div class="col-md-6"><!-- col-md-6 Begin -->
+            <div class="col-md-6">
+                <!-- col-md-6 Begin -->
 
-            <ul class="menu"><!-- menu Begin -->
+                <ul class="menu">
+                    <!-- menu Begin -->
 
-                <li>
-                    <a href="register.php">Sign up</a>
-                </li>
-                <li>
-                    <a href="account.php">My Account</a>
-                </li>
-                <li>
-                    <a href="cart.php">Go To Cart</a>
-                </li>
-                <li>
-                    <a href="login.php">Login</a>
-                </li>
-
-            </ul><!-- menu Finish -->
-
-        </div><!-- col-md-6 Finish -->
-
-    </div><!-- container Finish -->
-
-</div><!-- Top Finish -->
-
-<div id="navbar" class="navbar navbar-default"><!-- navbar navbar-default Begin -->
-
-    <div class="container"><!-- container Begin -->
-
-        <div class="navbar-header"><!-- navbar-header Begin -->
-
-            <a href="index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
-
-                <img src="images/logo.png" alt="Logo" style="height:70px" class="hidden-xs">
-
-
-            </a><!-- navbar-brand home Finish -->
-
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
-
-                <span class="sr-only">Toggle Navigation</span>
-
-                <i class="fa fa-align-justify"></i>
-
-            </button>
-
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
-
-                <span class="sr-only">Toggle Search</span>
-
-                <i class="fa fa-search"></i>
-
-            </button>
-
-        </div><!-- navbar-header Finish -->
-
-        <div class="navbar-collapse collapse" id="navigation"><!-- navbar-collapse collapse Begin -->
-
-            <div class="padding-nav"><!-- padding-nav Begin -->
-
-                <ul class="nav navbar-nav left"><!-- nav navbar-nav left Begin -->
-
-                    <li class="active">
-                        <a href="index.php">Home</a>
-                    </li>
                     <li>
-                        <a href="shop.php">Shop</a>
+                        <a href="register.php">Sign up</a>
                     </li>
                     <li>
                         <a href="account.php">My Account</a>
                     </li>
                     <li>
-                        <a href="cart.php">Shopping Cart</a>
+                        <a href="cart.php">Go To Cart</a>
                     </li>
                     <li>
-                        <a href="contact.php">Contact Us</a>
+                        <a href="login.php">Login</a>
                     </li>
 
-                </ul><!-- nav navbar-nav left Finish -->
+                </ul><!-- menu Finish -->
 
-            </div><!-- padding-nav Finish -->
+            </div><!-- col-md-6 Finish -->
 
-            <a href="cart.php" class="btn navbar-btn btn-primary right"><!-- btn navbar-btn btn-primary Begin -->
+        </div><!-- container Finish -->
 
-                <i class="fa fa-shopping-cart"></i>
+    </div><!-- Top Finish -->
 
-                <span>4 Items In Your Cart</span>
+    <div id="navbar" class="navbar navbar-default">
+        <!-- navbar navbar-default Begin -->
 
-            </a><!-- btn navbar-btn btn-primary Finish -->
+        <div class="container">
+            <!-- container Begin -->
 
-            <div class="navbar-collapse collapse right"><!-- navbar-collapse collapse right Begin -->
+            <div class="navbar-header">
+                <!-- navbar-header Begin -->
 
-                <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search"><!-- btn btn-primary navbar-btn Begin -->
+                <a href="index.php" class="navbar-brand home">
+                    <!-- navbar-brand home Begin -->
+
+                    <img src="images/logo.png" alt="Logo" style="height:70px" class="hidden-xs">
+
+
+                </a><!-- navbar-brand home Finish -->
+
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+
+                    <span class="sr-only">Toggle Navigation</span>
+
+                    <i class="fa fa-align-justify"></i>
+
+                </button>
+
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
 
                     <span class="sr-only">Toggle Search</span>
 
                     <i class="fa fa-search"></i>
 
-                </button><!-- btn btn-primary navbar-btn Finish -->
+                </button>
 
-            </div><!-- navbar-collapse collapse right Finish -->
+            </div><!-- navbar-header Finish -->
 
-            <div class="collapse clearfix" id="search"><!-- collapse clearfix Begin -->
+            <div class="navbar-collapse collapse" id="navigation">
+                <!-- navbar-collapse collapse Begin -->
 
-                <form method="get" action="results.php" class="navbar-form"><!-- navbar-form Begin -->
+                <div class="padding-nav">
+                    <!-- padding-nav Begin -->
 
-                    <div class="input-group"><!-- input-group Begin -->
+                    <ul class="nav navbar-nav left">
+                        <!-- nav navbar-nav left Begin -->
 
-                        <input type="text" class="form-control" placeholder="Search" name="user_query" required>
+                        <li>
+                            <a href="index.php">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.php">Shop</a>
+                        </li>
+                        <li class="active">
+                            <a href="account.php">My Account</a>
+                        </li>
+                        <li>
+                            <a href="cart.php">Shopping Cart</a>
+                        </li>
+                        <li>
+                            <a href="contact.php">Contact Us</a>
+                        </li>
 
-                        <span class="input-group-btn"><!-- input-group-btn Begin -->
-                           
-                           <button type="submit" name="search" value="Search" class="btn btn-primary"><!-- btn btn-primary Begin -->
-                               
-                               <i class="fa fa-search"></i>
-                               
-                           </button><!-- btn btn-primary Finish -->
-                           
-                           </span><!-- input-group-btn Finish -->
+                    </ul><!-- nav navbar-nav left Finish -->
 
-                    </div><!-- input-group Finish -->
+                </div><!-- padding-nav Finish -->
 
-                </form><!-- navbar-form Finish -->
+                <a href="cart.php" class="btn navbar-btn btn-primary right">
+                    <!-- btn navbar-btn btn-primary Begin -->
 
-            </div><!-- collapse clearfix Finish -->
+                    <i class="fa fa-shopping-cart"></i>
 
-        </div><!-- navbar-collapse collapse Finish -->
+                    <span>4 Items In Your Cart</span>
 
-    </div><!-- container Finish -->
+                </a><!-- btn navbar-btn btn-primary Finish -->
 
-</div><!-- navbar navbar-default Finish -->
-   
-   <div id="content"><!-- #content Begin -->
-       <div class="container"><!-- container Begin -->
-           <div class="col-md-12"><!-- col-md-12 Begin -->
-               
-               <ul class="breadcrumb"><!-- breadcrumb Begin -->
-                   <li>
-                       <a href="index.php">Home</a>
-                   </li>
-                   <li>
-                       My Account
-                   </li>
-               </ul><!-- breadcrumb Finish -->
-               
-           </div><!-- col-md-12 Finish -->
-           
-           <div class="col-md-3"><!-- col-md-3 Begin -->
-   
-   <?php 
-    
-    include("includes/sidebar.php");
-    
-    ?>
-               
-           </div><!-- col-md-3 Finish -->
-           
-           <div class="col-md-9"><!-- col-md-9 Begin -->
-               
-               <div class="box"><!-- box Begin -->
-                   <div id="myTabContent" class="tab-content">
-                       <form action="update.php" method="post"><!-- form Begin -->
+                <div class="navbar-collapse collapse right">
+                    <!-- navbar-collapse collapse right Begin -->
 
-                           <div class="form-group"><!-- form-group Begin -->
+                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">
+                        <!-- btn btn-primary navbar-btn Begin -->
 
-                               <label>Your Username</label>
+                        <span class="sr-only">Toggle Search</span>
 
-                               <input type="text" class="form-control" name="c_username" required disabled placeholder="Ouweshs28">
+                        <i class="fa fa-search"></i>
 
-                           </div><!-- form-group Finish -->
+                    </button><!-- btn btn-primary navbar-btn Finish -->
 
-                           <div class="form-group"><!-- form-group Begin -->
+                </div><!-- navbar-collapse collapse right Finish -->
 
-                               <label>First Name</label>
+                <div class="collapse clearfix" id="search">
+                    <!-- collapse clearfix Begin -->
 
-                               <input type="text" class="form-control" name="c_fname" required>
+                    <form method="get" action="results.php" class="navbar-form">
+                        <!-- navbar-form Begin -->
 
-                           </div><!-- form-group Finish -->
+                        <div class="input-group">
+                            <!-- input-group Begin -->
 
-                   </div><!-- form-group Finish -->
+                            <input type="text" class="form-control" placeholder="Search" name="user_query" required>
 
-                   <div class="form-group"><!-- form-group Begin -->
+                            <span class="input-group-btn">
+                                <!-- input-group-btn Begin -->
 
-                       <label>Last Name</label>
+                                <button type="submit" name="search" value="Search" class="btn btn-primary">
+                                    <!-- btn btn-primary Begin -->
 
-                       <input type="text" class="form-control" name="c_lname" required>
+                                    <i class="fa fa-search"></i>
 
-                   </div><!-- form-group Finish -->
+                                </button><!-- btn btn-primary Finish -->
 
-                           <div class="form-group"><!-- form-group Begin -->
+                            </span><!-- input-group-btn Finish -->
 
-                               <label>Your Email</label>
+                        </div><!-- input-group Finish -->
 
-                               <input type="text" class="form-control" name="c_email" required>
+                    </form><!-- navbar-form Finish -->
 
-                           </div><!-- form-group Finish -->
+                </div><!-- collapse clearfix Finish -->
 
-                           <div class="form-group"><!-- form-group Begin -->
+            </div><!-- navbar-collapse collapse Finish -->
 
-                               <label>Your Password</label>
+        </div><!-- container Finish -->
 
-                               <input type="password" class="form-control" name="c_pass" required>
+    </div><!-- navbar navbar-default Finish -->
 
-                               <div class="form-group"><!-- form-group Begin -->
+    <div id="content">
+        <!-- #content Begin -->
+        <div class="container">
+            <!-- container Begin -->
+            <div class="col-md-12">
+                <!-- col-md-12 Begin -->
 
-                                   <label>Your Address</label>
+                <ul class="breadcrumb">
+                    <!-- breadcrumb Begin -->
+                    <li>
+                        <a href="index.php">Home</a>
+                    </li>
+                    <li>
+                        My Account
+                    </li>
+                </ul><!-- breadcrumb Finish -->
 
-                                   <input type="text" class="form-control" name="c_address" required>
+            </div><!-- col-md-12 Finish -->
 
-                               </div><!-- form-group Finish -->
+            <div class="col-md-3">
+                <!-- col-md-3 Begin -->
 
-                           </div><!-- form-group Finish -->
+                <?php
 
-                           <div class="form-group"><!-- form-group Begin -->
+                include("includes/sidebar.php");
 
-                               <label>Your Postal Code</label>
+                ?>
 
-                               <input type="text" class="form-control" name="c_postalcode" required>
+            </div><!-- col-md-3 Finish -->
 
-                           </div><!-- form-group Finish -->
+            <div class="col-md-9">
+                <!-- col-md-9 Begin -->
 
-                           <div class="form-group"><!-- form-group Begin -->
+                <div class="box">
+                    <!-- box Begin -->
+                    <div id="myTabContent" class="tab-content">
+                        <form action="update.php" method="post">
+                            <!-- form Begin -->
 
-                               <label>Your Phone Number</label>
+                            <div class="form-group">
+                                <!-- form-group Begin -->
 
-                               <input type="text" class="form-control" name="c_contact" required>
+                                <label>Your Username</label>
 
-                           </div><!-- form-group Finish -->
+                                <input type="text" class="form-control" name="c_username" required disabled placeholder="Ouweshs28">
 
-                           <div class="form-group"><!-- form-group Begin -->
+                            </div><!-- form-group Finish -->
 
-                               <label>Your Profile Picture</label>
+                            <div class="form-group">
+                                <!-- form-group Begin -->
 
-                               <input type="file" class="form-control form-height-custom" name="c_image" required>
+                                <label>First Name</label>
 
-                           </div><!-- form-group Finish -->
+                                <input type="text" class="form-control" name="c_fname" required>
 
-                           <div class="text-center"><!-- text-center Begin -->
+                            </div><!-- form-group Finish -->
 
-                               <button type="submit" name="register" class="btn btn-primary">
+                    </div><!-- form-group Finish -->
 
-                                 UPDATE
+                    <div class="form-group">
+                        <!-- form-group Begin -->
 
-                               </button>
+                        <label>Last Name</label>
 
-                           </div><!-- text-center Finish -->
+                        <input type="text" class="form-control" name="c_lname" required>
 
-                       </form>
+                    </div><!-- form-group Finish -->
 
-               </div><!-- box Finish -->
-               
-           </div><!-- col-md-9 Finish -->
-           
-       </div><!-- container Finish -->
-   </div><!-- #content Finish -->
-   
-   <?php 
-    
+                    <div class="form-group">
+                        <!-- form-group Begin -->
+
+                        <label>Your Email</label>
+
+                        <input type="text" class="form-control" name="c_email" required>
+
+                    </div><!-- form-group Finish -->
+
+                    <div class="form-group">
+                        <!-- form-group Begin -->
+
+                        <label>Your Password</label>
+
+                        <input type="password" class="form-control" name="c_pass" required>
+
+                        <div class="form-group">
+                            <!-- form-group Begin -->
+
+                            <label>Your Address</label>
+
+                            <input type="text" class="form-control" name="c_address" required>
+
+                        </div><!-- form-group Finish -->
+
+                    </div><!-- form-group Finish -->
+
+                    <div class="form-group">
+                        <!-- form-group Begin -->
+
+                        <label>Your Postal Code</label>
+
+                        <input type="text" class="form-control" name="c_postalcode" required>
+
+                    </div><!-- form-group Finish -->
+
+                    <div class="form-group">
+                        <!-- form-group Begin -->
+
+                        <label>Your Phone Number</label>
+
+                        <input type="text" class="form-control" name="c_contact" required>
+
+                    </div><!-- form-group Finish -->
+
+                    <div class="form-group">
+                        <!-- form-group Begin -->
+
+                        <label>Your Profile Picture</label>
+
+                        <input type="file" class="form-control form-height-custom" name="c_image" required>
+
+                    </div><!-- form-group Finish -->
+
+                    <div class="text-center">
+                        <!-- text-center Begin -->
+
+                        <button type="submit" name="register" class="btn btn-primary">
+
+                            UPDATE
+
+                        </button>
+
+                    </div><!-- text-center Finish -->
+
+                    </form>
+
+                </div><!-- box Finish -->
+
+            </div><!-- col-md-9 Finish -->
+
+        </div><!-- container Finish -->
+    </div><!-- #content Finish -->
+
+    <?php
+
     include("includes/footer.php");
-    
+
     ?>
-    
     <script src="js/jquery-331.min.js"></script>
     <script src="js/bootstrap-337.min.js"></script>
-    
-    
 </body>
+
 </html>

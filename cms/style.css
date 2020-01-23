@@ -1,0 +1,12 @@
+label {
+    color: gray;
+    font-weight: 400;
+}
+
+.add div {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+}

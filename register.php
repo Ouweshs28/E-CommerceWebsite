@@ -29,7 +29,7 @@
                        <a href="register.php">Sign up</a>
                    </li>
                    <li>
-                       <a href="checkout.php">My Account</a>
+                       <a href="account.php">My Account</a>
                    </li>
                    <li>
                        <a href="cart.php">Go To Cart</a>
@@ -189,84 +189,94 @@
                            </p><!-- text-muted Finish -->
                            
                        </divgi><!-- center Finish -->
-                       
-                       <form action="register.php" method="post"><!-- form Begin -->
-                           
-                          <div class="form-group"><!-- form-group Begin -->
-                               
-                               <label>Your Name</label>
-                               
-                               <input type="text" class="form-control" name="c_name" required>
-                               
-                           </div><!-- form-group Finish -->
-                           
+
+                       <form action="update.php" method="post"><!-- form Begin -->
+
                            <div class="form-group"><!-- form-group Begin -->
-                               
-                               <label>Your Email</label>
-                               
-                               <input type="text" class="form-control" name="c_email" required>
-                               
+
+                               <label>Your Username</label>
+
+                               <input type="text" class="form-control" name="c_username" required>
+
                            </div><!-- form-group Finish -->
-                           
+
                            <div class="form-group"><!-- form-group Begin -->
-                               
-                               <label>Your Password</label>
-                               
-                               <input type="password" class="form-control" name="c_pass" required>
-                               
+
+                               <label>First Name</label>
+
+                               <input type="text" class="form-control" name="c_fname" required>
+
                            </div><!-- form-group Finish -->
-                           
-                           <div class="form-group"><!-- form-group Begin -->
-                               
-                               <label>Your Country</label>
-                               
-                               <input type="text" class="form-control" name="c_country" required>
-                               
-                           </div><!-- form-group Finish -->
-                           
-                           <div class="form-group"><!-- form-group Begin -->
-                               
-                               <label>Your City</label>
-                               
-                               <input type="text" class="form-control" name="c_city" required>
-                               
-                           </div><!-- form-group Finish -->
-                           
-                           <div class="form-group"><!-- form-group Begin -->
-                               
-                               <label>Your Contact</label>
-                               
-                               <input type="text" class="form-control" name="c_contact" required>
-                               
-                           </div><!-- form-group Finish -->
-                           
-                           <div class="form-group"><!-- form-group Begin -->
-                               
-                               <label>Your Address</label>
-                               
-                               <input type="text" class="form-control" name="c_address" required>
-                               
-                           </div><!-- form-group Finish -->
-                           
-                           <div class="form-group"><!-- form-group Begin -->
-                               
-                               <label>Your Profile Picture</label>
-                               
-                               <input type="file" class="form-control form-height-custom" name="c_image" required>
-                               
-                           </div><!-- form-group Finish -->
-                           
-                           <div class="text-center"><!-- text-center Begin -->
-                               
-                               <button type="submit" name="register" class="btn btn-primary">
-                               
-                               <i class="fa fa-user-md"></i> Sign up
-                               
-                               </button>
-                               
-                           </div><!-- text-center Finish -->
-                           
-                       </form><!-- form Finish -->
+
+                   </div><!-- form-group Finish -->
+
+                   <div class="form-group"><!-- form-group Begin -->
+
+                       <label>Last Name</label>
+
+                       <input type="text" class="form-control" name="c_lname" required>
+
+                   </div><!-- form-group Finish -->
+
+                   <div class="form-group"><!-- form-group Begin -->
+
+                       <label>Your Email</label>
+
+                       <input type="text" class="form-control" name="c_email" required>
+
+                   </div><!-- form-group Finish -->
+
+                   <div class="form-group"><!-- form-group Begin -->
+
+                       <label>Your Password</label>
+
+                       <input type="password" class="form-control" name="c_pass" required>
+
+                       <div class="form-group"><!-- form-group Begin -->
+
+                           <label>Your Address</label>
+
+                           <input type="text" class="form-control" name="c_address" required>
+
+                       </div><!-- form-group Finish -->
+
+                   </div><!-- form-group Finish -->
+
+                   <div class="form-group"><!-- form-group Begin -->
+
+                       <label>Your Postal Code</label>
+
+                       <input type="text" class="form-control" name="c_postalcode" required>
+
+                   </div><!-- form-group Finish -->
+
+                   <div class="form-group"><!-- form-group Begin -->
+
+                       <label>Your Phone Number</label>
+
+                       <input type="text" class="form-control" name="c_contact" required>
+
+                   </div><!-- form-group Finish -->
+
+                   <div class="form-group"><!-- form-group Begin -->
+
+                       <label>Your Profile Picture</label>
+
+                       <input type="file" class="form-control form-height-custom" name="c_image" required>
+
+                   </div><!-- form-group Finish -->
+
+                   <div class="text-center"><!-- text-center Begin -->
+
+                       <button type="submit" name="register" class="btn btn-primary">
+
+                           UPDATE
+
+                       </button>
+
+                   </div><!-- text-center Finish -->
+
+                   </form>!-- form Finish -->
                        
                    </div><!-- box-header Finish -->
                    

@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<style>
-    img {
-        height: 170px;
-        width: 140px
-    }
-</style>
 <body>
 
 <div id="top"><!-- Top Begin -->
@@ -35,7 +29,7 @@
                     <a href="register.php">Sign up</a>
                 </li>
                 <li>
-                    <a href="checkout.php">My Account</a>
+                    <a href="account.php">My Account</a>
                 </li>
                 <li>
                     <a href="cart.php">Go To Cart</a>
@@ -96,7 +90,7 @@
                         <a href="shop.php">Shop</a>
                     </li>
                     <li>
-                        <a href="checkout.php">My Account</a>
+                        <a href="account.php">My Account</a>
                     </li>
                     <li>
                         <a href="cart.php">Shopping Cart</a>

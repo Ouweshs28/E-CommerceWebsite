@@ -89,7 +89,7 @@
                         <a href="shop.php">Shop</a>
                     </li>
                     <li>
-                        <a href="checkout.php">My Account</a>
+                        <a href="account.php">My Account</a>
                     </li>
                     <li class="active">
                         <a href="cart.php">Shopping Cart</a>
@@ -197,7 +197,7 @@
                                             <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
                                             <td>Product Name Dada</td>
                                             <td>In stock</td>
-                                            <td>1</td>
+                                            <td><input class="form-control" type="text" value="1" /></td>
                                             <td class="text-right">124,90 €</td>
                                             <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                                         </tr>
@@ -205,7 +205,7 @@
                                             <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
                                             <td>Product Name Toto</td>
                                             <td>In stock</td>
-                                            <td>1</td>
+                                            <td><input class="form-control" type="text" value="1" /></td>
                                             <td class="text-right">33,90 €</td>
                                             <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                                         </tr>
@@ -213,7 +213,7 @@
                                             <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
                                             <td>Product Name Titi</td>
                                             <td>In stock</td>
-                                            <td>1</td>
+                                            <td><input class="form-control" type="text" value="1" /></td>
                                             <td class="text-right">70,00 €</td>
                                             <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                                         </tr>

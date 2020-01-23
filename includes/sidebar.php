@@ -21,26 +21,7 @@
     <div class="panel-body"><!--  panel-body Begin  -->
         
         <ul class="nav-pills nav-stacked nav"><!--  nav-pills nav-stacked nav Begin  -->
-            
-            <li class="<?php if(isset($_GET['my_orders'])){ echo "active"; } ?>">
-                
-                <a href="myorders.php">
-                    
-                    <i class="fa fa-list"></i> My Orders
-                    
-                </a>
-                
-            </li>
-            
-            <li class="<?php if(isset($_GET['edit_account'])){ echo "active"; } ?>">
-                
-                <a href="editaccount.php">
-                    
-                    <i class="fa fa-pencil"></i> Edit Account
-                    
-                </a>
-                
-            </li>
+
             <li>
                 
                 <a href="logout.php">

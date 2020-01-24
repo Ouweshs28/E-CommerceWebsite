@@ -311,10 +311,10 @@
                         <!-- text-center Begin -->
 
                         <button type="submit" name="register" class="btn btn-primary">
-                               
-                               <i class="fa fa-user-md"></i> Sign up
-                               
-                               </button>
+
+                            <i class="fa fa-user-md"></i> Sign up
+
+                        </button>
 
                     </div><!-- text-center Finish -->
 

@@ -1,0 +1,37 @@
+{
+  name:"Samsung Galaxy S10 Plus",
+  brand:"Samusung",
+  modelno:" SM-G975F",
+  imageUrl:"samsung/s10plus/s10plus.png",
+  category:"NEW",
+  storage:"64GB",
+  screensize:"6.4 inches";
+  cpu:"Exynos 9820",
+  ram:"8GB",
+  camera:{
+    Rear:"16MP+12MP+12MP",
+    Front:"10MP+8MP"
+  },
+  os:"Android 9.0 (Pie)",
+  price:28400,
+  desc:"samsung; galaxy; plus; dual camera; new; sm-g97; 64gb; 8gb; s10; android; pie ; exynos"
+},
+
+{
+name:"Xiaomi Redmi K20 Pro",
+brand:"Xiaomi",
+modelno: "MZB7749IN",
+imageUrl:"xiaomi/k20pro/k20pro.png",
+category:"NEW",
+storage:"64GB",
+screensize:"6.39 inches"
+cpu:"Snapdragon 855",
+ram:"6GB",
+camera:{
+Rear:"48MP+8MP+13MP", 
+Front:"10MP+8MP"
+},
+os:"Android 9.0 (Pie)"
+price: 20000,
+desc:"xiaomi redmi; k20; triple camera; new; MZB7; 64gb ; 6gb; snapdragon; android; pie"
+}

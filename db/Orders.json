@@ -1,0 +1,19 @@
+{
+username:"ouweshs28",
+shippingAddress:"Royal Road, Bon Acceuil",
+country:"Mauritius"
+date:"2020-01-23",
+time:"10:37",
+cost:"68400",
+products:
+[ {
+             id: ObjectId("5e221f5c31dd24a9b600e19f"),
+             qty: 1,
+             price: 28400
+         },
+         {
+             id: ObjectId("5e221f5c31dd24a9b600e1a0"),
+             qty: 2,
+             price: 40000
+         }]
+}

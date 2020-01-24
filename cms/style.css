@@ -1,11 +1,17 @@
+/* Label styles */
+
 label {
     color: gray;
     font-weight: 400;
 }
 
+/* Gap between divs */
+
 .add div {
     margin-bottom: 10px;
 }
+
+/* input fields */
 
 input {
     width: 100%;

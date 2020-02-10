@@ -221,7 +221,7 @@
 
                         </divgi><!-- center Finish -->
 
-                        <form action="update.php" method="post">
+                        <form action="newcustomer.php" method="post">
                             <!-- form Begin -->
 
                             <div class="form-group">
@@ -277,6 +277,15 @@
                             <input type="text" class="form-control" name="c_address" required>
 
                         </div><!-- form-group Finish -->
+
+                    </div><!-- form-group Finish -->
+
+                    <div class="form-group">
+                        <!-- form-group Begin -->
+
+                        <label>Your Country</label>
+
+                        <input type="text" class="form-control" name="c_country" required>
 
                     </div><!-- form-group Finish -->
 

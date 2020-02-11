@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/toastr.css">
+
 </head>
 
 <body>
@@ -221,7 +223,7 @@
 
                         </divgi><!-- center Finish -->
 
-                        <form action="newcustomer.php" method="post">
+                        <div>
                             <!-- form Begin -->
 
                             <div class="form-group">
@@ -312,14 +314,14 @@
 
                         <label>Your Profile Picture</label>
 
-                        <input type="file" class="form-control form-height-custom" name="c_image" required>
+                        <input type="file" class="form-control form-height-custom" name="c_image">
 
                     </div><!-- form-group Finish -->
 
                     <div class="text-center">
                         <!-- text-center Begin -->
 
-                        <button type="submit" name="register" class="btn btn-primary">
+                        <button name="register" class="btn btn-primary" onclick="register()">
 
                             <i class="fa fa-user-md"></i> Sign up
 
@@ -327,7 +329,7 @@
 
                     </div><!-- text-center Finish -->
 
-                    </form><!-- form Finish -->
+                    </div><!-- form Finish -->
 
                 </div><!-- box-header Finish -->
 
@@ -343,9 +345,10 @@
     include("includes/footer.php");
 
     ?>
-
+    <script src="js/register.js"></script>
     <script src="js/jquery-331.min.js"></script>
     <script src="js/bootstrap-337.min.js"></script>
+    <script src="js/toastr.js"></script>
 
 </body>
 

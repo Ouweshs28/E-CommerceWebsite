@@ -38,12 +38,4 @@ $dataArray = [
 
 //Add the new customer to the database
 $insertResult = $collection->insertOne($dataArray);
-
-//Echo result back to user
-if($insertResult->getInsertedCount()==1){
-    echo 'Customer added.';
-    echo ' New document id: ' . $insertResult->getInsertedId();
-}
-else {
-    echo 'Error adding customer';
-}
+echo 'Thank you for registering ' . $username;

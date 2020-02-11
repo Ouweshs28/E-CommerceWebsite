@@ -321,7 +321,7 @@
                     <div class="text-center">
                         <!-- text-center Begin -->
 
-                        <button name="register" class="btn btn-primary" onclick="register()">
+                        <button name="register" class="btn btn-primary" onclick="return register()">
 
                             <i class="fa fa-user-md"></i> Sign up
 

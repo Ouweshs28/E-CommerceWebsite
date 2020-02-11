@@ -38,4 +38,6 @@ $dataArray = [
 
 //Add the new customer to the database
 $insertResult = $collection->insertOne($dataArray);
-echo 'Thank you for registering ' . $username;
+if($insertResult->getInsertedCount()==1) {
+    echo 'Thank you for registering ' . $username;
+}

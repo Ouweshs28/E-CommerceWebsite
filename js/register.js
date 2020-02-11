@@ -30,6 +30,11 @@ function register(){
     let country = document.getElementsByName("c_country")[0].value;
     let postalCode = document.getElementsByName("c_postalcode")[0].value;
     let phone = document.getElementsByName("c_contact")[0].value;
+
+    if(fanme==""||lanme==""||username==""||email==""||password==""||address==""||country==""||postalCode==""||phone==""){
+        toastr.error("Please fill up all details");
+        return;
+    }
     //Send request
     request.send("c_fname=" + fanme
         + "&c_lname=" + lanme

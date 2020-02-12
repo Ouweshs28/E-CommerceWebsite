@@ -209,7 +209,7 @@
                     <div class="box-header">
                         <!-- box-header Begin -->
 
-                        <divgi style="text-align: center;">
+                        <div style="text-align: center;">
                             <!-- center Begin -->
 
                             <h2> Create your account</h2>
@@ -221,7 +221,7 @@
 
                             </p><!-- text-muted Finish -->
 
-                        </divgi><!-- center Finish -->
+                        </div><!-- center Finish -->
 
                         <div>
                             <!-- form Begin -->

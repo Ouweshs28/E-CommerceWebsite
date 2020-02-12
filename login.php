@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/toastr.css">
 </head>
 
 <body>
@@ -221,7 +222,7 @@
 
                         </center><!-- center Finish -->
 
-                        <form action="login.php" method="post">
+                        <div>
                             <!-- form Begin -->
 
                             <div class="form-group">
@@ -246,7 +247,7 @@
                             <div class="text-center">
                                 <!-- text-center Begin -->
 
-                                <button type="submit" name="Login" class="btn btn-primary">
+                                <button name="Login" onclick="return login()" class="btn btn-primary">
 
                                     <i class="fa fa-user-md"></i> Login
 
@@ -254,7 +255,7 @@
 
                             </div><!-- text-center Finish -->
 
-                        </form><!-- form Finish -->
+                        </div><!-- form Finish -->
 
                     </div><!-- box-header Finish -->
 
@@ -270,10 +271,10 @@
     include("includes/footer.php");
 
     ?>
-
+    <script src="js/login.js"></script>
     <script src="js/jquery-331.min.js"></script>
     <script src="js/bootstrap-337.min.js"></script>
-
+    <script src="js/toastr.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,7 @@ function register(){
 
             //Add data to page
             toastr.success(responseData);
+            window.location.href="login.php";
         }
         else
             toastr.error("Error communicating with server: " + request.status);

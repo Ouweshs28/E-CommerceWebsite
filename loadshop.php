@@ -10,6 +10,8 @@ $db = $mongoClient->ecommerce;
 
 $collection = $db->Products;
 
-$result=$collection->find();
+$rangeQuery = ['stock' => ['$gt' => 0 ]];
+
+$result=$collection->find($rangeQuery);
 
 echo json_encode(iterator_to_array($result));

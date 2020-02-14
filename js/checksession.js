@@ -58,4 +58,5 @@ function logout(){
     //Set up and send request
     request.open("GET", "logout.php");
     request.send();
+    window.location.href="index.php";
 }

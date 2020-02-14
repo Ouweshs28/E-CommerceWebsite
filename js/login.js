@@ -12,6 +12,7 @@ function login(){
             //Add data to page
             if (responseData=="success"){
                 toastr.success("Successfully logged in");
+                window.location.href="shop.php";
             }else{
                 toastr.error("Incorrect Password or Username")
             }

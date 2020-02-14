@@ -18,11 +18,10 @@
         <div class="container">
             <!-- container Begin -->
 
-            <div class="col-md-6 offer">
+            <div class="col-md-6 offer" id="cart">
                 <!-- col-md-6 offer Begin -->
 
                 <a href="#" class="btn btn-success btn-sm">Welcome</a>
-                <a href="cart.php">4 Items In Your Cart | Total Price: Rs 3000 </a>
 
             </div><!-- col-md-6 offer Finish -->
 
@@ -30,19 +29,17 @@
                 <!-- col-md-6 Begin -->
 
                 <ul class="menu">
-                    <!-- cmenu Begin -->
+                    <!-- menu Begin -->
 
                     <li>
                         <a href="register.php">Sign up</a>
                     </li>
-                    <li>
-                        <a href="checkout.php">My Account</a>
+                    <li class="myaccount">
+                        <a href="account.php">My Account</a>
                     </li>
-                    <li>
-                        <a href="cart.php">Go To Cart</a>
+                    <li id="cartmenu">
                     </li>
-                    <li>
-                        <a href="login.php">Login</a>
+                    <li id="login">
                     </li>
 
                 </ul><!-- menu Finish -->
@@ -102,33 +99,33 @@
                         <li>
                             <a href="shop.php">Shop</a>
                         </li>
-                        <li>
+                        <li class="myaccount">
                             <a href="account.php">My Account</a>
                         </li>
-                        <li class="active">
+                        <li class="active" id="cartnav">
                             <a href="cart.php">Shopping Cart</a>
                         </li>
                         <li>
                             <a href="contact.php">Contact Us</a>
+                        </li>
+                        <li id="loginnav">
+                            <a href="login.php">Login</a>
                         </li>
 
                     </ul><!-- nav navbar-nav left Finish -->
 
                 </div><!-- padding-nav Finish -->
 
-                <a href="cart.php" class="btn navbar-btn btn-primary right">
+                <a href="cart.php" class="btn navbar-btn btn-primary right" id="cartBtn" >
                     <!-- btn navbar-btn btn-primary Begin -->
-
-                    <i class="fa fa-shopping-cart"></i>
-
-                    <span>4 Items In Your Cart</span>
 
                 </a><!-- btn navbar-btn btn-primary Finish -->
 
                 <div class="navbar-collapse collapse right">
                     <!-- navbar-collapse collapse right Begin -->
 
-                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">
+                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse"
+                            data-target="#search">
                         <!-- btn btn-primary navbar-btn Begin -->
 
                         <span class="sr-only">Toggle Search</span>
@@ -211,64 +208,73 @@
                                     <div class="table-responsive">
                                         <table class="table table-striped">
                                             <thead>
-                                                <tr>
-                                                    <th scope="col"> </th>
-                                                    <th scope="col">Product</th>
-                                                    <th scope="col">Available</th>
-                                                    <th scope="col" class="text-center">Quantity</th>
-                                                    <th scope="col" class="text-right">Price</th>
-                                                    <th> </th>
-                                                </tr>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Available</th>
+                                                <th scope="col" class="text-center">Quantity</th>
+                                                <th scope="col" class="text-right">Price</th>
+                                                <th></th>
+                                            </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                                                    <td>Product Name Dada</td>
-                                                    <td>In stock</td>
-                                                    <td><input class="form-control" type="text" value="1" /></td>
-                                                    <td class="text-right">124,90 €</td>
-                                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                                                    <td>Product Name Toto</td>
-                                                    <td>In stock</td>
-                                                    <td><input class="form-control" type="text" value="1" /></td>
-                                                    <td class="text-right">33,90 €</td>
-                                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                                                    <td>Product Name Titi</td>
-                                                    <td>In stock</td>
-                                                    <td><input class="form-control" type="text" value="1" /></td>
-                                                    <td class="text-right">70,00 €</td>
-                                                    <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>Sub-Total</td>
-                                                    <td class="text-right">255,90 €</td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>Shipping</td>
-                                                    <td class="text-right">6,90 €</td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td><strong>Total</strong></td>
-                                                    <td class="text-right"><strong>346,90 €</strong></td>
-                                                </tr>
+                                            <tr>
+                                                <td><img src="https://dummyimage.com/50x50/55595c/fff"/></td>
+                                                <td>Product Name Dada</td>
+                                                <td>In stock</td>
+                                                <td><input class="form-control" type="text" value="1"/></td>
+                                                <td class="text-right">124,90 €</td>
+                                                <td class="text-right">
+                                                    <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://dummyimage.com/50x50/55595c/fff"/></td>
+                                                <td>Product Name Toto</td>
+                                                <td>In stock</td>
+                                                <td><input class="form-control" type="text" value="1"/></td>
+                                                <td class="text-right">33,90 €</td>
+                                                <td class="text-right">
+                                                    <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://dummyimage.com/50x50/55595c/fff"/></td>
+                                                <td>Product Name Titi</td>
+                                                <td>In stock</td>
+                                                <td><input class="form-control" type="text" value="1"/></td>
+                                                <td class="text-right">70,00 €</td>
+                                                <td class="text-right">
+                                                    <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>Sub-Total</td>
+                                                <td class="text-right">255,90 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>Shipping</td>
+                                                <td class="text-right">6,90 €</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><strong>Total</strong></td>
+                                                <td class="text-right"><strong>346,90 €</strong></td>
+                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -276,10 +282,12 @@
                                 <div class="col mb-2">
                                     <div class="row">
                                         <div class="col-sm-12  col-md-6">
-                                            <a href="shop.php" class="btn btn-lg btn-block btn-danger text-uppercase">Continue Shopping</a>
+                                            <a href="shop.php" class="btn btn-lg btn-block btn-danger text-uppercase">Continue
+                                                Shopping</a>
                                         </div>
                                         <div class="col-sm-12 col-md-6 text-right">
-                                            <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout</button>
+                                            <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -295,22 +303,22 @@
 
     </div><!-- #row same-heigh-row Finish -->
 
-    </div><!-- col-md-9 Finish -->
+</div><!-- col-md-9 Finish -->
 
 
-    </div><!-- col-md-3 Finish -->
+</div><!-- col-md-3 Finish -->
 
-    </div><!-- container Finish -->
-    </div><!-- #content Finish -->
+</div><!-- container Finish -->
+</div><!-- #content Finish -->
 
-    <?php
+<?php
 
-    include("includes/footer.php");
+include("includes/footer.php");
 
-    ?>
-
-    <script src="js/jquery-331.min.js"></script>
-    <script src="js/bootstrap-337.min.js"></script>
+?>
+<script src="js/checksession.js"></script>
+<script src="js/jquery-331.min.js"></script>
+<script src="js/bootstrap-337.min.js"></script>
 
 </body>
 

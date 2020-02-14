@@ -22,7 +22,7 @@ function login(){
     };
 
     //Set up request with HTTP method and URL
-    request.open("POST", "checklogin.php");
+    request.open("POST", "customerlogin.php");
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
     //Extract registration data

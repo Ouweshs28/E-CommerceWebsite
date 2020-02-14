@@ -1,5 +1,8 @@
 //Download products when page loads
-window.onload = loadProducts;
+$.getScript('./js/checksession.js', function()
+{
+    loadProducts();
+});
 
 //Downloads JSON description of products from server
 function loadProducts(){

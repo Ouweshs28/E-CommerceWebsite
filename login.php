@@ -19,11 +19,10 @@
         <div class="container">
             <!-- container Begin -->
 
-            <div class="col-md-6 offer">
+            <div class="col-md-6 offer" id="cart">
                 <!-- col-md-6 offer Begin -->
 
                 <a href="#" class="btn btn-success btn-sm">Welcome</a>
-                <a href="cart.php">4 Items In Your Cart | Total Price: $300 </a>
 
             </div><!-- col-md-6 offer Finish -->
 
@@ -31,19 +30,17 @@
                 <!-- col-md-6 Begin -->
 
                 <ul class="menu">
-                    <!-- cmenu Begin -->
+                    <!-- menu Begin -->
 
                     <li>
                         <a href="register.php">Sign up</a>
                     </li>
-                    <li>
+                    <li class="myaccount">
                         <a href="account.php">My Account</a>
                     </li>
-                    <li>
-                        <a href="cart.php">Go To Cart</a>
+                    <li id="cartmenu">
                     </li>
-                    <li>
-                        <a href="login.php">Login</a>
+                    <li id="login">
                     </li>
 
                 </ul><!-- menu Finish -->
@@ -96,36 +93,29 @@
 
                     <ul class="nav navbar-nav left">
                         <!-- nav navbar-nav left Begin -->
-
                         <li>
                             <a href="index.php">Home</a>
                         </li>
                         <li>
                             <a href="shop.php">Shop</a>
                         </li>
-                        <li>
-                            <a href="checkout.php">My Account</a>
+                        <li class="myaccount">
+                            <a href="account.php">My Account</a>
                         </li>
-                        <li>
+                        <li id="cartnav">
                             <a href="cart.php">Shopping Cart</a>
                         </li>
-                        <li class="active">
+                        <li class="active" id="loginnav">
                             <a href="login.php">Login</a>
                         </li>
 
                     </ul><!-- nav navbar-nav left Finish -->
 
                 </div><!-- padding-nav Finish -->
-
-                <a href="cart.php" class="btn navbar-btn btn-primary right">
+                <a href="cart.php" class="btn navbar-btn btn-primary right" id="cartBtn" >
                     <!-- btn navbar-btn btn-primary Begin -->
 
-                    <i class="fa fa-shopping-cart"></i>
-
-                    <span>4 Items In Your Cart</span>
-
                 </a><!-- btn navbar-btn btn-primary Finish -->
-
                 <div class="navbar-collapse collapse right">
                     <!-- navbar-collapse collapse right Begin -->
 
@@ -272,6 +262,7 @@
 
     ?>
     <script src="js/login.js"></script>
+    <script src="js/checksession.js"></script>
     <script src="js/jquery-331.min.js"></script>
     <script src="js/bootstrap-337.min.js"></script>
     <script src="js/toastr.js"></script>

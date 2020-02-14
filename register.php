@@ -14,40 +14,37 @@
 
 <body>
 
-    <div id="top">
-        <!-- Top Begin -->
+<div id="top">
+    <!-- Top Begin -->
 
-        <div class="container">
-            <!-- container Begin -->
+    <div class="container">
+        <!-- container Begin -->
 
-            <div class="col-md-6 offer">
-                <!-- col-md-6 offer Begin -->
+        <div class="col-md-6 offer" id="cart">
+            <!-- col-md-6 offer Begin -->
 
-                <a href="#" class="btn btn-success btn-sm">Welcome</a>
-                <a href="cart.php">4 Items In Your Cart | Total Price: $300 </a>
+            <a href="#" class="btn btn-success btn-sm">Welcome</a>
 
-            </div><!-- col-md-6 offer Finish -->
+        </div><!-- col-md-6 offer Finish -->
 
-            <div class="col-md-6">
-                <!-- col-md-6 Begin -->
+        <div class="col-md-6">
+            <!-- col-md-6 Begin -->
 
-                <ul class="menu">
-                    <!-- cmenu Begin -->
+            <ul class="menu">
+                <!-- menu Begin -->
 
-                    <li>
-                        <a href="register.php">Sign up</a>
-                    </li>
-                    <li>
-                        <a href="account.php">My Account</a>
-                    </li>
-                    <li>
-                        <a href="cart.php">Go To Cart</a>
-                    </li>
-                    <li>
-                        <a href="login.php">Login</a>
-                    </li>
+                <li>
+                    <a href="register.php">Sign up</a>
+                </li>
+                <li class="myaccount">
+                    <a href="account.php">My Account</a>
+                </li>
+                <li id="cartmenu">
+                </li>
+                <li id="login">
+                </li>
 
-                </ul><!-- menu Finish -->
+            </ul><!-- menu Finish -->
 
             </div><!-- col-md-6 Finish -->
 
@@ -345,6 +342,7 @@
     include("includes/footer.php");
 
     ?>
+    <script src="js/checksession.js"></script>
     <script src="js/register.js"></script>
     <script src="js/jquery-331.min.js"></script>
     <script src="js/bootstrap-337.min.js"></script>

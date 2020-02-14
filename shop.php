@@ -13,40 +13,37 @@
 
 <body>
 
-    <div id="top">
-        <!-- Top Begin -->
+<div id="top">
+    <!-- Top Begin -->
 
-        <div class="container">
-            <!-- container Begin -->
+    <div class="container">
+        <!-- container Begin -->
 
-            <div class="col-md-6 offer">
-                <!-- col-md-6 offer Begin -->
+        <div class="col-md-6 offer" id="cart">
+            <!-- col-md-6 offer Begin -->
 
-                <a href="#" class="btn btn-success btn-sm">Welcome</a>
-                <a href="cart.php">4 Items In Your Cart | Total Price: $300 </a>
+            <a href="#" class="btn btn-success btn-sm">Welcome</a>
 
-            </div><!-- col-md-6 offer Finish -->
+        </div><!-- col-md-6 offer Finish -->
 
-            <div class="col-md-6">
-                <!-- col-md-6 Begin -->
+        <div class="col-md-6">
+            <!-- col-md-6 Begin -->
 
-                <ul class="menu">
-                    <!-- gitmenu Begin -->
+            <ul class="menu">
+                <!-- menu Begin -->
 
-                    <li>
-                        <a href="register.php">Sign up</a>
-                    </li>
-                    <li>
-                        <a href="account.php">My Account</a>
-                    </li>
-                    <li>
-                        <a href="cart.php">Go To Cart</a>
-                    </li>
-                    <li>
-                        <a href="login.php">Login</a>
-                    </li>
+                <li>
+                    <a href="register.php">Sign up</a>
+                </li>
+                <li class="myaccount">
+                    <a href="account.php">My Account</a>
+                </li>
+                <li id="cartmenu">
+                </li>
+                <li id="login">
+                </li>
 
-                </ul><!-- menu Finish -->
+            </ul><!-- menu Finish -->
 
             </div><!-- col-md-6 Finish -->
 
@@ -104,26 +101,26 @@
                         <li class="active">
                             <a href="shop.php">Shop</a>
                         </li>
-                        <li>
+                        <li class="myaccount">
                             <a href="account.php">My Account</a>
                         </li>
-                        <li>
+                        <li id="cartnav">
                             <a href="cart.php">Shopping Cart</a>
                         </li>
                         <li>
                             <a href="contact.php">Contact Us</a>
                         </li>
+                        <li id="loginnav">
+                            <a href="login.php">Login</a>
+                        </li>
+
 
                     </ul><!-- nav navbar-nav left Finish -->
 
                 </div><!-- padding-nav Finish -->
 
-                <a href="cart.php" class="btn navbar-btn btn-primary right">
+                <a href="cart.php" class="btn navbar-btn btn-primary right" id="cartBtn" >
                     <!-- btn navbar-btn btn-primary Begin -->
-
-                    <i class="fa fa-shopping-cart"></i>
-
-                    <span>4 Items In Your Cart</span>
 
                 </a><!-- btn navbar-btn btn-primary Finish -->
 
@@ -211,9 +208,9 @@
     include("includes/footer.php");
 
     ?>
+    <script src="js/jquery-331.min.js"></script>
     <script src="js/shop.js"></script>
     <script src="js/toastr.js"></script>
-    <script src="js/jquery-331.min.js"></script>
     <script src="js/bootstrap-337.min.js"></script>
 
 </body>

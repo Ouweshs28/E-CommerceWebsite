@@ -27,7 +27,7 @@ $result=$collection->countDocuments($findCriteria);
 if($result==1) {
     echo "success";
     //Start session for this user
-    $_SESSION['loggedInUserEmail'] = $username;
+    $_SESSION['loggedInUsername'] = $username;
 
 }else{
     echo "error";

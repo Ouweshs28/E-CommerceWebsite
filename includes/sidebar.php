@@ -39,7 +39,7 @@
 
             <li>
 
-                <a href="logout.php">
+                <a href="login.php" onclick="logout()">
 
                     <i class="fa fa-sign-out"></i> Log Out
 

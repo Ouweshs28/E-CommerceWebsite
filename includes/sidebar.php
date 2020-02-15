@@ -1,25 +1,7 @@
 <div class="panel panel-default sidebar-menu">
     <!--  panel panel-default sidebar-menu Begin  -->
 
-    <div class="panel-heading">
-        <!--  panel-heading  Begin  -->
-
-        <center>
-            <!--  center  Begin  -->
-
-            <img src="../images/user.png" alt=" Profile" style="height: 200px;">
-
-        </center><!--  center  Finish  -->
-
-        <br />
-
-        <h3 align="center" class="panel-title">
-            <!--  panel-title  Begin  -->
-
-            FirstName LastName
-
-        </h3><!--  panel-title  Finish -->
-
+    <div class="panel-heading" id="userprofile">
     </div><!--  panel-heading Finish  -->
 
     <div class="panel-body">

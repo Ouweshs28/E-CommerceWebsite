@@ -40,7 +40,7 @@ function displayProducts(jsonProducts){
         htmlStr += '<p class="font-italic text-muted mb-0 small">'+ prodArray[i].storage+ ' | ' +prodArray[i].ram+ ' | ' + prodArray[i].camera.Rear + " Rear Camera | "+ prodArray[i].camera.Front+ " Front Camera"+ " | "+ prodArray[i].cpu+ " | "+ prodArray[i].os+"</p>";
         htmlStr += '<div class="d-flex align-items-center justify-content-between mt-1">';
         htmlStr += '<h6 class="font-weight-bold my-2">Rs' + prodArray[i].price + "</h6></div>";
-        htmlStr += '<img src="images/'+prodArray[i].imageUrl+'"width="200" class="ml-lg-5 order-1 order-lg-2">';
+        htmlStr += '<img src="server/images/'+prodArray[i].imageUrl+'"width="200" class="ml-lg-5 order-1 order-lg-2">';
         htmlStr += '<a type="button" class="btn btn-success pull-right">ADD TO CART</a>\n' +
             '                        </div> <!-- End -->\n' +
             '                    </li>';

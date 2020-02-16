@@ -210,6 +210,7 @@
     ?>
     <script src="js/jquery-331.min.js"></script>
     <script src="js/shop.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/toastr.js"></script>
     <script src="js/bootstrap-337.min.js"></script>
 

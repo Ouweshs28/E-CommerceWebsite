@@ -195,7 +195,6 @@
 
                 <div class="box">
                     <!-- box Begin -->
-
                     <form action="cart.php" method="post" enctype="multipart/form-data">
                         <!-- form Begin -->
 

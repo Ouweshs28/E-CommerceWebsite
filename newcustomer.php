@@ -25,7 +25,7 @@ $phone = filter_input(INPUT_POST, 'c_contact', FILTER_SANITIZE_STRING);
 
 //Convert to PHP array
 $dataArray = [
-    "fistName" => $fname,
+    "firstName" => $fname,
     "lastName"=>$lname,
     "username" => $username,
     "email" => $email,

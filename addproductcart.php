@@ -2,10 +2,6 @@
 
 $productID= filter_input(INPUT_POST, '_id', FILTER_SANITIZE_STRING);
 
-$findCriteria = [
-    "_id" => new MongoDB\BSON\ObjectID("5e221f5c31dd24a9b600e19f")//replace when done
-];
-
 //Include libraries
 require __DIR__ . '/vendor/autoload.php';
 
@@ -15,37 +11,46 @@ $mongoClient = (new MongoDB\Client);
 //Select a database
 $db = $mongoClient->ecommerce;
 
-$collection = $db->Products;
 
-
-$result=$collection->find($findCriteria);
-
-foreach ($result as $document) {
-    $pid=$document["_id"];
-    $pname= $document["name"];
-    $price= $document["price"];
-}
-
-session_start();
-$db = $mongoClient->ecommerce;
-
-$username=$_SESSION['loggedInUsername'];
-
-//Create a PHP array with our search criteria
 $findCriteria = [
-    'username' => $username
+    "_id" => new MongoDB\BSON\ObjectID("5e221f5c31dd24a9b600e1a0"),//replace when done
+    'stock' => ['$gt' => 0 ]
 ];
+
+
+$collectionProduct = $db->Products;
+
+
+$resultProduct=$collectionProduct->find($findCriteria);
+
+$prouctinstock=$collectionProduct->countDocuments($findCriteria);
+
+
+if($prouctinstock==1) {
+    foreach ($resultProduct as $document) {
+        $pid = $document["_id"];
+        $pname = $document["name"];
+        $price = $document["price"];
+        $stock = $document["stock"];
+    }
 
 //Specify how the documents will be updated
-$updateCriteria = [
-    '$set' => ["cost"=>$price,
-        "products" => [
-        "_id"=>new MongoDB\BSON\ObjectID($pid),
-        "name"=>$pname,
-        "qty"=>1,
-        "price"=>$price
-    ] ]
-];
+    $updateCriteria = [
+        '$set' => ["stock" => $stock - 1,
+        ]
+    ];
 
 //Update all of the customers that match  this criteria
-$updateRes = $db->Carts->updateOne($findCriteria, $updateCriteria);
+    $updateRes = $db->Products->updateOne($findCriteria, $updateCriteria);
+    $collectionProduct = $db->Products;
+    $result=$collectionProduct->find($findCriteria);
+    $prodArry=json_encode(iterator_to_array($result));
+
+}else{
+    echo "out stock";
+}
+
+echo $prodArry;
+
+//Update all of the customers that match  this criteria
+

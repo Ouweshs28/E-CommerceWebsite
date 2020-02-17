@@ -31,14 +31,14 @@ function displayProfileDetails(jsonUser){
 
     //Create HTML table containing product data
     let htmlStr = '<div class="form-group"><label>Your Username</label>'+
-        '<input type="text" class="form-control" name="c_username" required disabled value='+profile[0].username+'>' +'</div>';
-    htmlStr += '<div class="form-group"><label>First Name</label><input type="text" class="form-control" name="c_fname" value='+profile[0].firstName+'></div>';
-    htmlStr += '<div class="form-group"> <label>Last Name</label> <input type="text" class="form-control" name="c_lname" value='+profile[0].lastName+'> </div>';
-    htmlStr += '<div class="form-group"><label>Your Email</label> <input type="text" class="form-control" name="c_email" value='+profile[0].email+'> </div>';
-    htmlStr += '<div class="form-group"><label>Your Password</label><input type="password" class="form-control" name="c_pass" value='+profile[0].password+'></div>';
-    htmlStr += '<div class="form-group"><label>Your Address</label><input type="text" class="form-control" name="c_address" value='+profile[0].address+'></div>';
-    htmlStr += '<div class="form-group"><label>Your Postal Code</label><input type="text" class="form-control" name="c_postalcode" value='+profile[0].postalCode+'></div>';
-    htmlStr += '<div class="form-group"><label>Your Phone Number</label><input type="text" class="form-control" name="c_contact" value='+profile[0].phone+'></div>';
+        '<input type="text" class="form-control" name="c_username" required disabled value="'+profile[0].username+'">' +'</div>';
+    htmlStr += '<div class="form-group"><label>First Name</label><input type="text" class="form-control" name="c_fname" value="'+profile[0].firstName+'"></div>';
+    htmlStr += '<div class="form-group"> <label>Last Name</label> <input type="text" class="form-control" name="c_lname" value="'+profile[0].lastName+'"> </div>';
+    htmlStr += '<div class="form-group"><label>Your Email</label> <input type="text" class="form-control" name="c_email" value="'+profile[0].email+'"> </div>';
+    htmlStr += '<div class="form-group"><label>Your Password</label><input type="password" class="form-control" name="c_pass" value="'+profile[0].password+'"></div>';
+    htmlStr += '<div class="form-group"><label>Your Address</label><input type="text" class="form-control" name="c_address" value="'+profile[0].address+'"></div>';
+    htmlStr += '<div class="form-group"><label>Your Postal Code</label><input type="text" class="form-control" name="c_postalcode" value="'+profile[0].postalCode+'"></div>';
+    htmlStr += '<div class="form-group"><label>Your Phone Number</label><input type="text" class="form-control" name="c_contact" value="'+profile[0].phone+'"></div>';
     htmlStr +='<div class="form-group"><label>Your Profile Picture</label><input type="file" class="form-control form-height-custom" name="c_image" required></div>';
     htmlStr += '<div class="text-center"><button name="register" class="btn btn-primary">UPDATE</button></div>';
     //Finish off table and add to document

@@ -16,6 +16,7 @@ function getCartServer() {
         if(request.status === 200){
             //Add data from server to page
             getCartJson(request.responseText);
+            return getCartJson;
 
         }
         else
@@ -28,13 +29,12 @@ function getCartServer() {
 
 }
 
-function getCartJson(cartJson) {
+function getCartJson() {
     let cartArray = JSON.parse(cartJson);
-    addProduct(ProductID);
-
+    return cartArray;
 }
 
-function addProduct(ProductID) {
+function getProductJson(ProductID) {
     let request = new XMLHttpRequest();
 
     //Create event handler that specifies what should happen when server responds
@@ -44,8 +44,10 @@ function addProduct(ProductID) {
             //Get data from server
             let responseData = request.responseText;
 
+            let prodArray = JSON.parse(responseData);
             //Add data to page
-                toastr.success(responseData);
+                //toastr.success(responseData);
+            getDetails(prodArray);
         }
         else
             toastr.error("Error communicating with server: " + request.status);
@@ -57,5 +59,12 @@ function addProduct(ProductID) {
 
     //Send request
     request.send("_id=" + ProductID);
+}
+
+function getDetails(prodArray) {
+    console.log(prodArray);
+    let cartJson=getCartJson();
+    console.log(cartJson);
+
 }
 

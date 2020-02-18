@@ -33,7 +33,6 @@ function displayProducts(jsonProducts){
     //Create HTML table containing product data
     let htmlStr = '';
     for(let i=0; i<prodArray.length; ++i){
-        console.log(prodArray[i]._id.$oid);
         htmlStr += '<li class="list-group-item">' +
             '<div class="media align-items-lg-center flex-column flex-lg-row p-3">'+
             '                            <div class="media-body order-2 order-lg-1">';
@@ -42,7 +41,7 @@ function displayProducts(jsonProducts){
         htmlStr += '<div class="d-flex align-items-center justify-content-between mt-1">';
         htmlStr += '<h6 class="font-weight-bold my-2">Rs' + prodArray[i].price + "</h6></div>";
         htmlStr += '<img src="server/images/'+prodArray[i].imageUrl+'"width="200" class="ml-lg-5 order-1 order-lg-2">';
-        htmlStr += '<a type="button" class="btn btn-success pull-right" onclick="addToCart('+prodArray[i]._id.$oid+')">ADD TO CART</a></div></li>';
+        htmlStr += '<a type="button" class="btn btn-success pull-right" onclick="getProductJson(\'' + prodArray[i]._id.$oid + '\')">ADD TO CART</a></div></li>';
     }
     //Finish off table and add to document
     document.getElementById("shop").innerHTML = htmlStr;

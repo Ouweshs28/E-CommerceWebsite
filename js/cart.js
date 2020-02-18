@@ -6,7 +6,7 @@ function updateCart() {
 
 }
 
-function getCartServer() {
+function getCartServer(cartArray) {
     //Create request object
     let request = new XMLHttpRequest();
 
@@ -15,8 +15,9 @@ function getCartServer() {
         //Check HTTP status code
         if(request.status === 200){
             //Add data from server to page
-            getCartJson(request.responseText);
-            return getCartJson;
+            let getCartJson=JSON.parse(request.responseText);
+            console.log(getCartJson);
+            console.log(cartArray);
 
         }
         else
@@ -29,11 +30,6 @@ function getCartServer() {
 
 }
 
-function getCartJson() {
-    let cartArray = JSON.parse(cartJson);
-    return cartArray;
-}
-
 function getProductJson(ProductID) {
     let request = new XMLHttpRequest();
 
@@ -43,11 +39,18 @@ function getProductJson(ProductID) {
         if(request.status === 200){
             //Get data from server
             let responseData = request.responseText;
+            console.log(responseData);
+            if(responseData=="[]" || responseData=="out stock"){
+                toastr.error("Out of stock")
+            }else{
 
             let prodArray = JSON.parse(responseData);
             //Add data to page
                 //toastr.success(responseData);
-            getDetails(prodArray);
+                getBasket();
+               addToBasket(prodArray[0]._id.$oid, prodArray[0].name,prodArray[0].price);
+
+        }
         }
         else
             toastr.error("Error communicating with server: " + request.status);
@@ -60,11 +63,41 @@ function getProductJson(ProductID) {
     //Send request
     request.send("_id=" + ProductID);
 }
-
-function getDetails(prodArray) {
-    console.log(prodArray);
-    let cartJson=getCartJson();
-    console.log(cartJson);
-
+//Get basket from session storage or create one if it does not exist
+function getBasket(){
+    let basket;
+    if(sessionStorage.basket === undefined || sessionStorage.basket === ""){
+        basket = [];
+    }
+    else {
+        basket = JSON.parse(sessionStorage.basket);
+    }
+    return basket;
 }
+
+function addToBasket(prodID, prodName,price){
+    let basket = getBasket();//Load or create basket
+
+    //Add product to basket
+    let exist=false;
+    let j=0;
+        for (let i=0;i<basket.length;i++){
+        if (basket[i].name==prodName){
+            j=i;
+            exist=true;
+            break;
+        }
+    }
+    if (!exist) {
+        basket.push({_id: prodID, name: prodName, qty: 1});
+    }
+    else{
+        basket[j].qty++;
+    }
+    //Store in local storage
+    sessionStorage.basket = JSON.stringify(basket);
+    getCartServer(basket);
+}
+
+
 

@@ -14,7 +14,7 @@ $collection = $db->Carts;
 $username=$_SESSION['loggedInUsername'];
 
 $findCriteria = [
-    "username" => "ouweshs28",
+    "username" => $username,
 ];
 
 $result=$collection->find($findCriteria);

@@ -141,7 +141,7 @@
                 <div class="collapse clearfix" id="search">
                     <!-- collapse clearfix Begin -->
 
-                    <form method="get" action="results.php" class="navbar-form">
+                    <div class="navbar-form">
                         <!-- navbar-form Begin -->
 
                         <div class="input-group">
@@ -152,7 +152,7 @@
                             <span class="input-group-btn">
                                 <!-- input-group-btn Begin -->
 
-                                <button type="submit" name="search" value="Search" class="btn btn-primary">
+                                <button  class="btn btn-primary">
                                     <!-- btn btn-primary Begin -->
 
                                     <i class="fa fa-search"></i>
@@ -163,7 +163,7 @@
 
                         </div><!-- input-group Finish -->
 
-                    </form><!-- navbar-form Finish -->
+                    </div><!-- navbar-form Finish -->
 
                 </div><!-- collapse clearfix Finish -->
 

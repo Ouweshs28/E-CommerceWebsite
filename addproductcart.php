@@ -13,7 +13,7 @@ $db = $mongoClient->ecommerce;
 
 
 $findCriteria = [
-    "_id" => new MongoDB\BSON\ObjectID("5e221f5c31dd24a9b600e1a0"),//replace when done
+    "_id" => new MongoDB\BSON\ObjectID($productID),//replace when done
     'stock' => ['$gt' => 0 ]
 ];
 
@@ -45,12 +45,12 @@ if($prouctinstock==1) {
     $collectionProduct = $db->Products;
     $result=$collectionProduct->find($findCriteria);
     $prodArry=json_encode(iterator_to_array($result));
+    echo $prodArry;
 
 }else{
     echo "out stock";
 }
 
-echo $prodArry;
 
 //Update all of the customers that match  this criteria
 

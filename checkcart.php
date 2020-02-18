@@ -28,7 +28,6 @@ if($cart==0){
         "date" => date("Y-m-d"),
         "time" =>date("h:i"),
         "cost"=> 0,
-        "products"=>[]
     ];
 
 //Add the new customer to the database

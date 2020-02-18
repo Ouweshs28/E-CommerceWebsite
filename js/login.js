@@ -13,6 +13,7 @@ function login(){
             if (responseData=="success"){
                 toastr.success("Successfully logged in");
                 window.location.href="shop.php";
+                return checkCartServer();
             }else{
                 toastr.error("Incorrect Password or Username")
             }
@@ -37,4 +38,23 @@ function login(){
     //Send request
     request.send("c_username=" + fname
         + "&c_pass=" + password);
+}
+
+function checkCartServer() {
+    //Create request object
+    let request = new XMLHttpRequest();
+
+    //Create event handler that specifies what should happen when server responds
+    request.onload = () => {
+        //Check HTTP status code
+        if(request.status === 200){
+        }
+        else
+            toastr.error("Error communicating with server: " + request.status);
+    };
+
+    //Set up request and send it
+    request.open("GET", "checkcart.php");
+    request.send();
+
 }

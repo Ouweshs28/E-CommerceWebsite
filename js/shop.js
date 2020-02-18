@@ -1,3 +1,4 @@
+let ProductArray;
 //Download products when page loads
 $.getScript('./js/checksession.js', function()
 {
@@ -29,6 +30,7 @@ function loadProducts(){
 function displayProducts(jsonProducts){
     //Convert JSON to array of product objects
     let prodArray = JSON.parse(jsonProducts);
+    ProductArray=prodArray;
 
     //Create HTML table containing product data
     let htmlStr = '';
@@ -45,4 +47,120 @@ function displayProducts(jsonProducts){
     }
     //Finish off table and add to document
     document.getElementById("shop").innerHTML = htmlStr;
+}
+
+function PriceDesc() {
+    let needsort = true;
+    for (let i = 1; i < ProductArray.length && needsort; i++) {
+        needsort = false;
+        for (let j = 0; j < ProductArray.length - 1; j++) {
+            if (ProductArray[j].price < ProductArray[j + 1].price) {
+                let temp = ProductArray[j + 1];
+                ProductArray[j + 1] = ProductArray[j];
+                ProductArray[j] = temp;
+                needsort = true;
+            }
+
+        }
+    }
+    displayProducts(JSON.stringify(ProductArray));
+}
+
+function PriceAsc() {
+    let needsort = true;
+    for (let i = 1; i < ProductArray.length && needsort; i++) {
+        needsort = false;
+        for (let j = 0; j < ProductArray.length - 1; j++) {
+            if (ProductArray[j].price > ProductArray[j + 1].price) {
+                let temp = ProductArray[j + 1];
+                ProductArray[j + 1] = ProductArray[j];
+                ProductArray[j] = temp;
+                needsort = true;
+            }
+
+        }
+    }
+    displayProducts(JSON.stringify(ProductArray));
+}
+
+function StorageAsc() {
+    let needsort = true;
+    for (let i = 1; i < ProductArray.length && needsort; i++) {
+        needsort = false;
+        for (let j = 0; j < ProductArray.length - 1; j++) {
+            if (ProductArray[j].storage > ProductArray[j + 1].storage) {
+                let temp = ProductArray[j + 1];
+                ProductArray[j + 1] = ProductArray[j];
+                ProductArray[j] = temp;
+                needsort = true;
+            }
+
+        }
+    }
+    displayProducts(JSON.stringify(ProductArray));
+}
+
+function StorageDsc() {
+    let needsort = true;
+    for (let i = 1; i < ProductArray.length && needsort; i++) {
+        needsort = false;
+        for (let j = 0; j < ProductArray.length - 1; j++) {
+            if (ProductArray[j].storage < ProductArray[j + 1].storage) {
+                let temp = ProductArray[j + 1];
+                ProductArray[j + 1] = ProductArray[j];
+                ProductArray[j] = temp;
+                needsort = true;
+            }
+
+        }
+    }
+    displayProducts(JSON.stringify(ProductArray));
+}
+
+function SortBrand() {
+    let needsort = true;
+    for (let i = 1; i < ProductArray.length && needsort; i++) {
+        needsort = false;
+        for (let j = 0; j < ProductArray.length - 1; j++) {
+            if ((ProductArray[j].brand).localeCompare(ProductArray[j+1].brand)>0) {
+                let temp = ProductArray[j + 1];
+                ProductArray[j + 1] = ProductArray[j];
+                ProductArray[j] = temp;
+                needsort = true;
+            }
+
+        }
+    }
+    displayProducts(JSON.stringify(ProductArray));
+}
+
+function search(){
+
+    //Create request object
+    let request = new XMLHttpRequest();
+
+    //Create event handler that specifies what should happen when server responds
+    request.onload = () => {
+        //Check HTTP status code
+        if(request.status === 200){
+            //Get data from server
+            let responseData = request.responseText;
+
+            //Add data to page
+            displayProducts(responseData);
+
+        }
+        else
+            toastr.error("Error communicating with server: " + request.status);
+    };
+
+    //Set up request with HTTP method and URL
+    request.open("POST", "loadshop.php");
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    //Extract registration data
+    let search = document.getElementById("user_query").value;
+
+    //Send request
+    request.send("search=" + search);
 }

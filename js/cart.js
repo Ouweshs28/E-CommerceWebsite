@@ -16,8 +16,9 @@ function getCartServer(cartArray) {
         if(request.status === 200){
             //Add data from server to page
             let getCartJson=JSON.parse(request.responseText);
-            console.log(getCartJson);
-            console.log(cartArray);
+           let finalCart=new Array();
+           finalCart.push(getCartJson[0],cartArray);
+           console.log(finalCart);
 
         }
         else

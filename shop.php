@@ -147,7 +147,7 @@
                         <div class="input-group">
                             <!-- input-group Begin -->
 
-                            <input type="text" class="form-control" placeholder="Search" name="user_query" required>
+                            <input type="text" class="form-control" placeholder="Search" id="user_query" required>
 
                             <span class="input-group-btn">
                                 <!-- input-group-btn Begin -->
@@ -155,7 +155,7 @@
                                 <button  class="btn btn-primary">
                                     <!-- btn btn-primary Begin -->
 
-                                    <i class="fa fa-search"></i>
+                                    <i class="fa fa-search" onclick="search()"></i>
 
                                 </button><!-- btn btn-primary Finish -->
 
@@ -178,11 +178,11 @@
             Sort By <span class="caret"></span>
         </button>
         <ul class="dropdown-menu">
-            <li><a>Price: Ascending</a></li>
-            <li><a>Price: Descending</a></li>
-            <li><a>Storage: Ascending</a></li>
-            <li><a>Storage: Descending</a></li>
-            <li><a>Brand</a></li>
+            <li><a onclick="PriceAsc()">Price: Ascending</a></li>
+            <li><a onclick="PriceDesc()">Price: Descending</a></li>
+            <li><a onclick="StorageAsc()">Storage: Ascending</a></li>
+            <li><a onclick="StorageDsc()">Storage: Descending</a></li>
+            <li><a onclick="SortBrand()">Brand</a></li>
         </ul>
     </div>
 

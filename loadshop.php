@@ -1,5 +1,7 @@
 <?php
 //Include libraries
+
+$search= filter_input(INPUT_POST, 'search', FILTER_SANITIZE_STRING);
 require __DIR__ . '/vendor/autoload.php';
 
 //Create instance of MongoDB client
@@ -10,8 +12,21 @@ $db = $mongoClient->ecommerce;
 
 $collection = $db->Products;
 
-$rangeQuery = ['stock' => ['$gt' => 0 ]];
+if ($search=="") {
 
-$result=$collection->find($rangeQuery);
+    $rangeQuery = ['stock' => ['$gt' => 0]];
 
-echo json_encode(iterator_to_array($result));
+    $result = $collection->find($rangeQuery);
+
+    echo json_encode(iterator_to_array($result));
+}else{
+
+    $findCriteria=[
+        '$text'=>['$search'=>$search]
+    ];
+
+    $result = $collection->find($findCriteria);
+
+    echo json_encode(iterator_to_array($result));
+
+}

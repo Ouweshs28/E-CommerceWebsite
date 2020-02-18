@@ -60,4 +60,3 @@ function logout(){
     request.send();
     window.location.href="index.php";
 }
-

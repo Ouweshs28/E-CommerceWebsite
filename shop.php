@@ -152,10 +152,10 @@
                             <span class="input-group-btn">
                                 <!-- input-group-btn Begin -->
 
-                                <button  class="btn btn-primary">
+                                <button onclick="search() "class="btn btn-primary">
                                     <!-- btn btn-primary Begin -->
 
-                                    <i class="fa fa-search" onclick="search()"></i>
+                                    <i class="fa fa-search"></i>
 
                                 </button><!-- btn btn-primary Finish -->
 

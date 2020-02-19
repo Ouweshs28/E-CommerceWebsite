@@ -13,217 +13,218 @@
 
 <body>
 
-    <div id="top">
-        <!-- Top Begin -->
+<div id="top">
+    <!-- Top Begin -->
 
-        <div class="container">
-            <!-- container Begin -->
+    <div class="container">
+        <!-- container Begin -->
 
-            <div class="col-md-6 offer" id="cart">
-                <!-- col-md-6 offer Begin -->
+        <div class="col-md-6 offer" id="cart">
+            <!-- col-md-6 offer Begin -->
 
-                <a href="#" class="btn btn-success btn-sm">Welcome</a>
+            <a href="#" class="btn btn-success btn-sm">Welcome</a>
 
-            </div><!-- col-md-6 offer Finish -->
+        </div><!-- col-md-6 offer Finish -->
 
-            <div class="col-md-6">
-                <!-- col-md-6 Begin -->
+        <div class="col-md-6">
+            <!-- col-md-6 Begin -->
 
-                <ul class="menu">
-                    <!-- menu Begin -->
+            <ul class="menu">
+                <!-- menu Begin -->
 
-                    <li>
-                        <a href="register.php">Sign up</a>
-                    </li>
-                    <li class="myaccount">
-                        <a href="account.php">My Account</a>
-                    </li>
-                    <li id="cartmenu">
-                    </li>
-                    <li id="login">
-                    </li>
+                <li>
+                    <a href="register.php">Sign up</a>
+                </li>
+                <li class="myaccount">
+                    <a href="account.php">My Account</a>
+                </li>
+                <li id="cartmenu">
+                </li>
+                <li id="login">
+                </li>
 
-                </ul><!-- menu Finish -->
+            </ul><!-- menu Finish -->
 
-            </div><!-- col-md-6 Finish -->
+        </div><!-- col-md-6 Finish -->
 
-        </div><!-- container Finish -->
+    </div><!-- container Finish -->
 
-    </div><!-- Top Finish -->
+</div><!-- Top Finish -->
 
-    <div id="navbar" class="navbar navbar-default">
-        <!-- navbar navbar-default Begin -->
+<div id="navbar" class="navbar navbar-default">
+    <!-- navbar navbar-default Begin -->
 
-        <div class="container">
-            <!-- container Begin -->
+    <div class="container">
+        <!-- container Begin -->
 
-            <div class="navbar-header">
-                <!-- navbar-header Begin -->
+        <div class="navbar-header">
+            <!-- navbar-header Begin -->
 
-                <a href="index.php" class="navbar-brand home">
-                    <!-- navbar-brand home Begin -->
+            <a href="index.php" class="navbar-brand home">
+                <!-- navbar-brand home Begin -->
 
-                    <img src="images/logo.png" alt="Logo" style="height:70px" class="hidden-xs">
+                <img src="images/logo.png" alt="Logo" style="height:70px" class="hidden-xs">
 
-                </a><!-- navbar-brand home Finish -->
+            </a><!-- navbar-brand home Finish -->
 
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
 
-                    <span class="sr-only">Toggle Navigation</span>
+                <span class="sr-only">Toggle Navigation</span>
 
-                    <i class="fa fa-align-justify"></i>
+                <i class="fa fa-align-justify"></i>
 
-                </button>
+            </button>
 
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
 
-                    <span class="sr-only">Toggle Search</span>
+                <span class="sr-only">Toggle Search</span>
 
-                    <i class="fa fa-search"></i>
+                <i class="fa fa-search"></i>
 
-                </button>
+            </button>
 
-            </div><!-- navbar-header Finish -->
+        </div><!-- navbar-header Finish -->
 
-            <div class="navbar-collapse collapse" id="navigation">
-                <!-- navbar-collapse collapse Begin -->
+        <div class="navbar-collapse collapse" id="navigation">
+            <!-- navbar-collapse collapse Begin -->
 
-                <div class="padding-nav">
-                    <!-- padding-nav Begin -->
+            <div class="padding-nav">
+                <!-- padding-nav Begin -->
 
-                    <ul class="nav navbar-nav left">
-                        <!-- nav navbar-nav left Begin -->
-                        <li>
-                            <a href="index.php">Home</a>
-                        </li>
-                        <li>
-                            <a href="shop.php">Shop</a>
-                        </li>
-                        <li class="myaccount">
-                            <a href="account.php">My Account</a>
-                        </li>
-                        <li id="cartnav">
-                            <a href="cart.php">Shopping Cart</a>
-                        </li>
-                        <li class="active" id="loginnav">
-                            <a href="login.php">Login</a>
-                        </li>
-
-                    </ul><!-- nav navbar-nav left Finish -->
-
-                </div><!-- padding-nav Finish -->
-                <a href="cart.php" class="btn navbar-btn btn-primary right" id="cartBtn" >
-                    <!-- btn navbar-btn btn-primary Begin -->
-
-                </a><!-- btn navbar-btn btn-primary Finish -->
-                <div class="navbar-collapse collapse right">
-                    <!-- navbar-collapse collapse right Begin -->
-
-        </div><!-- container Finish -->
-
-    </div><!-- navbar navbar-default Finish -->
-
-    <div id="content">
-        <!-- #content Begin -->
-        <div class="container">
-            <!-- container Begin -->
-            <div class="col-md-12">
-                <!-- col-md-12 Begin -->
-
-                <ul class="breadcrumb">
-                    <!-- breadcrumb Begin -->
+                <ul class="nav navbar-nav left">
+                    <!-- nav navbar-nav left Begin -->
                     <li>
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        Login
+                        <a href="shop.php">Shop</a>
                     </li>
-                </ul><!-- breadcrumb Finish -->
+                    <li class="myaccount">
+                        <a href="account.php">My Account</a>
+                    </li>
+                    <li id="cartnav">
+                        <a href="cart.php">Shopping Cart</a>
+                    </li>
+                    <li class="active" id="loginnav">
+                        <a href="login.php">Login</a>
+                    </li>
 
-            </div><!-- col-md-12 Finish -->
+                </ul><!-- nav navbar-nav left Finish -->
 
-            <div class="col-md-3">
-                <!-- col-md-3 Begin -->
+            </div><!-- padding-nav Finish -->
+            <a href="cart.php" class="btn navbar-btn btn-primary right" id="cartBtn">
+                <!-- btn navbar-btn btn-primary Begin -->
 
+            </a><!-- btn navbar-btn btn-primary Finish -->
+            <div class="navbar-collapse collapse right">
+                <!-- navbar-collapse collapse right Begin -->
 
-            </div><!-- col-md-3 Finish -->
+            </div><!-- container Finish -->
 
-            <div>
+        </div><!-- navbar navbar-default Finish -->
 
-                <div class="box">
-                    <!-- box Begin -->
+        <div id="content">
+            <!-- #content Begin -->
+            <div class="container">
+                <!-- container Begin -->
+                <div class="col-md-12">
+                    <!-- col-md-12 Begin -->
 
-                    <div class="box-header">
-                        <!-- box-header Begin -->
+                    <ul class="breadcrumb">
+                        <!-- breadcrumb Begin -->
+                        <li>
+                            <a href="index.php">Home</a>
+                        </li>
+                        <li>
+                            Login
+                        </li>
+                    </ul><!-- breadcrumb Finish -->
 
-                        <center>
-                            <!-- center Begin -->
+                </div><!-- col-md-12 Finish -->
 
-                            <h2> Sign in</h2>
-
-                            <p class="text-muted">
-                                <!-- text-muted Begin -->
-
-                                If you have any questions, feel free to contact us. Our Customer Service work <strong>24/7</strong>
-
-                            </p><!-- text-muted Finish -->
-
-                        </center><!-- center Finish -->
-
-                        <div>
-                            <!-- form Begin -->
-
-                            <div class="form-group">
-                                <!-- form-group Begin -->
-
-                                <label>Username</label>
-
-                                <input type="text" class="form-control" name="c_name" required>
-
-                            </div><!-- form-group Finish -->
-
-                            <div class="form-group">
-                                <!-- form-group Begin -->
-
-                                <label>Password</label>
-
-                                <input type="password" class="form-control" name="c_password" required>
-
-                            </div><!-- form-group Finish -->
+                <div class="col-md-3">
+                    <!-- col-md-3 Begin -->
 
 
-                            <div class="text-center">
-                                <!-- text-center Begin -->
+                </div><!-- col-md-3 Finish -->
 
-                                <button name="Login" onclick="return login()" class="btn btn-primary">
+                <div>
 
-                                    <i class="fa fa-user-md"></i> Login
+                    <div class="box">
+                        <!-- box Begin -->
 
-                                </button>
+                        <div class="box-header">
+                            <!-- box-header Begin -->
 
-                            </div><!-- text-center Finish -->
+                            <center>
+                                <!-- center Begin -->
 
-                        </div><!-- form Finish -->
+                                <h2> Sign in</h2>
 
-                    </div><!-- box-header Finish -->
+                                <p class="text-muted">
+                                    <!-- text-muted Begin -->
 
-                </div><!-- box Finish -->
+                                    If you have any questions, feel free to contact us. Our Customer Service work
+                                    <strong>24/7</strong>
 
-            </div>
+                                </p><!-- text-muted Finish -->
 
-        </div><!-- container Finish -->
-    </div><!-- #content Finish -->
+                            </center><!-- center Finish -->
 
-    <?php
+                            <div>
+                                <!-- form Begin -->
 
-    include("includes/footer.php");
+                                <div class="form-group">
+                                    <!-- form-group Begin -->
 
-    ?>
-    <script src="js/login.js"></script>
-    <script src="js/checksession.js"></script>
-    <script src="js/jquery-331.min.js"></script>
-    <script src="js/bootstrap-337.min.js"></script>
-    <script src="js/toastr.js"></script>
+                                    <label>Username</label>
+
+                                    <input type="text" class="form-control" name="c_name" required>
+
+                                </div><!-- form-group Finish -->
+
+                                <div class="form-group">
+                                    <!-- form-group Begin -->
+
+                                    <label>Password</label>
+
+                                    <input type="password" class="form-control" name="c_password" required>
+
+                                </div><!-- form-group Finish -->
+
+
+                                <div class="text-center">
+                                    <!-- text-center Begin -->
+
+                                    <button name="Login" onclick="return login()" class="btn btn-primary">
+
+                                        <i class="fa fa-user-md"></i> Login
+
+                                    </button>
+
+                                </div><!-- text-center Finish -->
+
+                            </div><!-- form Finish -->
+
+                        </div><!-- box-header Finish -->
+
+                    </div><!-- box Finish -->
+
+                </div>
+
+            </div><!-- container Finish -->
+        </div><!-- #content Finish -->
+
+        <?php
+
+        include("includes/footer.php");
+
+        ?>
+        <script src="js/login.js"></script>
+        <script src="js/checksession.js"></script>
+        <script src="js/jquery-331.min.js"></script>
+        <script src="js/toastr.js"></script>
+        <script src="js/bootstrap-337.min.js"></script>
 </body>
 
 </html>

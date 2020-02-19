@@ -345,8 +345,8 @@
     <script src="js/checksession.js"></script>
     <script src="js/register.js"></script>
     <script src="js/jquery-331.min.js"></script>
-    <script src="js/bootstrap-337.min.js"></script>
     <script src="js/toastr.js"></script>
+    <script src="js/bootstrap-337.min.js"></script>
 
 </body>
 

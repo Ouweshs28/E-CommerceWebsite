@@ -1,10 +1,10 @@
 let loggedInStr = '<a onclick="logout()">Logout</a>';
 let loginStr = '<a href="login.php">Login</a>';
 let LoggedInCartStr='<a href="#" class="btn btn-success btn-sm">Welcome</a>' +
-    '                <a href="cart.php">4 Items In Your Cart | Total Price: $300 </a>';
+    '                <a href="cart.php">Items In Your Cart</a>';
 let CartStr='<a href="#" class="btn btn-success btn-sm">Welcome</a>';
 let LoggedInCartMenu='<a href="cart.php">Go To Cart</a>';
-let LoggedInCarBtn='<i class="fa fa-shopping-cart"></i><span>4 Items In Your Cart</span>';
+let LoggedInCarBtn='<i class="fa fa-shopping-cart"></i><span>  Your Cart  </span>';
 let request = new XMLHttpRequest();
 
 //Check login when page loads
@@ -60,3 +60,4 @@ function logout(){
     request.send();
     window.location.href="index.php";
 }
+

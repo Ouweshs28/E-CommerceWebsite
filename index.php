@@ -120,18 +120,16 @@
             <a href="cart.php" class="btn navbar-btn btn-primary right" id="cartBtn">
                 <!-- btn navbar-btn btn-primary Begin -->
 
-                <i class="fa fa-shopping-cart"></i>
-
-                <span>4 Items In Your Cart</span>
-
             </a><!-- btn navbar-btn btn-primary Finish -->
 
             <div class="navbar-collapse collapse right">
                 <!-- navbar-collapse collapse right Begin -->
 
-            </div><!-- container Finish -->
+            </div><!-- navbar-collapse collapse Finish -->
 
-        </div><!-- navbar navbar-default Finish -->
+        </div><!-- container Finish -->
+
+    </div><!-- navbar navbar-default Finish -->
 
 
         <div class="container" id="slider">

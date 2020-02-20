@@ -1,19 +1,18 @@
-function register(){
+function register() {
     //Create request object
     let request = new XMLHttpRequest();
 
     //Create event handler that specifies what should happen when server responds
     request.onload = () => {
         //Check HTTP status code
-        if(request.status === 200){
+        if (request.status === 200) {
             //Get data from server
             let responseData = request.responseText;
 
             //Add data to page
             toastr.success(responseData);
-            setTimeout(window.location.href="login.php",1000);
-        }
-        else
+            setTimeout(window.location.href = "login.php", 1000);
+        } else
             toastr.error("Error communicating with server: " + request.status);
     };
 
@@ -32,7 +31,7 @@ function register(){
     let postalCode = document.getElementsByName("c_postalcode")[0].value;
     let phone = document.getElementsByName("c_contact")[0].value;
 
-    if(fanme==""||lanme==""||username==""||email==""||password==""||address==""||country==""||postalCode==""||phone==""){
+    if (fanme == "" || lanme == "" || username == "" || email == "" || password == "" || address == "" || country == "" || postalCode == "" || phone == "") {
         toastr.error("Please fill up all details");
         return;
     }
@@ -45,5 +44,5 @@ function register(){
         + "&c_address=" + address
         + "&c_country=" + country
         + "&c_postalcode=" + postalCode
-        + "&c_contact=" + phone );
+        + "&c_contact=" + phone);
 }

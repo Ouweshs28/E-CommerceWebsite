@@ -1,5 +1,5 @@
-let total=0;
-let items=0;
+let total = 0;
+let items = 0;
 
 function updateCart() {
 //Create request object
@@ -15,13 +15,13 @@ function updateCart() {
 
 function updateOrder() {
 //Create request object
-    let itemsorder=0,totalorder=0;
+    let itemsorder = 0, totalorder = 0;
     let basket = getBasket();//Load or create basket
     // sending data to server
     for (let i = 0; i < basket.length; i++) {
-        itemsorder=itemsorder+basket[i].qty;
-        totalorder=totalorder+(itemsorder+basket[i].qty*itemsorder+basket[i].price);
-        }
+        itemsorder = itemsorder + basket[i].qty;
+        totalorder = totalorder + (itemsorder + basket[i].qty * itemsorder + basket[i].price);
+    }
     let request = new XMLHttpRequest();
     request.open("POST", "checkout.php");
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -30,6 +30,7 @@ function updateOrder() {
         + "&items=" + itemsorder);
     sessionStorage.clear();
     alert("Order Preceded Thank you");
+    window.location.href = "shop.php";
 
 }
 
@@ -50,7 +51,7 @@ function getProductJson(ProductID) {
                 //Add data to page
                 getBasket();
                 addToBasket(prodArray[0]._id.$oid, prodArray[0].name, prodArray[0].price);
-                total=total+prodArray[0].price;
+                total = total + prodArray[0].price;
                 items++;
                 updateCart();
 
@@ -92,7 +93,7 @@ function addToBasket(prodID, prodName, price) {
         }
     }
     if (!exist) {
-        basket.push({_id: prodID, name: prodName, price:price, qty: 1});
+        basket.push({_id: prodID, name: prodName, price: price, qty: 1});
     } else {
         basket[j].qty++;
     }

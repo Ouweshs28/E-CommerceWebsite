@@ -12,6 +12,7 @@ $db = $mongoClient->ecommerce;
 
 $collection = $db->Products;
 
+//if search is blank display all
 if ($search=="") {
 
     $rangeQuery = ['stock' => ['$gt' => 0]];

@@ -1,10 +1,8 @@
 <?php
-
 //Include libraries
 
-require __DIR__ . '/vendor/autoload.php';
-
 session_start();
+require __DIR__ . '/vendor/autoload.php';
 
 //Create instance of MongoDB client
 $mongoClient = (new MongoDB\Client);
@@ -12,12 +10,10 @@ $mongoClient = (new MongoDB\Client);
 //Select a database
 $db = $mongoClient->ecommerce;
 
-//Selecting Cart DB
-$collection = $db->Carts;
-
-//Getting logged in username
+$collection = $db->Orders;
 $username=$_SESSION['loggedInUsername'];
 
+//Create a PHP array with our search criteria
 $findCriteria = [
     "username" => $username,
 ];

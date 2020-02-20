@@ -1,3 +1,4 @@
+// variable for the buttons
 let loggedInStr = '<a onclick="logout()">Logout</a>';
 let loginStr = '<a href="login.php">Login</a>';
 let LoggedInCartStr='<a href="#" class="btn btn-success btn-sm">Welcome</a>' +

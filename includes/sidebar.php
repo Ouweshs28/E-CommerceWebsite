@@ -9,10 +9,18 @@
 
         <ul class="nav-pills nav-stacked nav">
             <!--  nav-pills nav-stacked nav Begin  -->
+            <li>
+
+                <a href="../account.php">
+
+                    <i class="fa fa-list"></i> My Account
+
+                </a>
+            </li>
 
             <li>
                 
-                <a href="my_account.php?my_orders">
+                <a href="../orders.php">
                     
                     <i class="fa fa-list"></i> My Orders
                     

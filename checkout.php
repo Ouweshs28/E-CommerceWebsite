@@ -14,14 +14,9 @@ $db = $mongoClient->ecommerce;
 
 $username=$_SESSION['loggedInUsername'];
 
-$findCriteria = [
-    "username" => $username,
-];
-
-$collection = $db->Carts;
+$collection = $db->Orders;
 
 //Find all of the customers that match  this criteria
-$cart=$collection->countDocuments($findCriteria);
 
 $totalcost=(int)$_POST['total'];
 
@@ -29,31 +24,21 @@ $itemStr=$_POST['items'];
 
 $items = (int)$itemStr;
 
-if($cart==0){
-    $dataArray = [
-        "username" => $username,
-        "sessionId"=> session_id(),
-        "date" => date("Y-m-d"),
-        "time" =>date("h:i"),
-        "cost"=> 0,
-        "items"=>0
-    ];
 
-//Add the new customer to the database
-    $insertResult = $collection->insertOne($dataArray);
-}
-else{
-    $updateCriteria = [
-        '$set' => [
+    $dataArray = [
+            "username" => $username,
             "sessionId" => session_id(),
             "date" => date("Y-m-d"),
             "time" =>date("h:i"),
             "cost"=>$totalcost,
             "products"=>$sessionCart,
             "items"=>$items
-        ]
     ];
 
-    $updateRes = $db->Carts->updateOne($findCriteria, $updateCriteria);
+    $insertResult = $collection->insertOne($dataArray);
 
-}
+$deleteCriteria = [
+    "username" => $username,
+];
+
+$deleteRes = $db->Carts->deleteOne($deleteCriteria);

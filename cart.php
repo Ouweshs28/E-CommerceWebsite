@@ -184,7 +184,7 @@
                                                    class="btn btn-lg btn-block btn-danger text-uppercase">Continue
                                                     Shopping</a>
                                             </div>
-                                            <div class="col-sm-12 col-md-6 text-right">
+                                            <div class="col-sm-12 col-md-6 text-right" onclick="updateOrder()">
                                                 <button class="btn btn-lg btn-block btn-success text-uppercase">Checkout
                                                 </button>
                                             </div>
@@ -216,6 +216,7 @@ include("includes/footer.php");
 
 ?>
 <script src="js/jquery-331.min.js"></script>
+<script src="js/cart.js"></script>
 <script src="js/loadcart.js"></script>
 <script src="js/toastr.js"></script>
 <script src="js/bootstrap-337.min.js"></script>

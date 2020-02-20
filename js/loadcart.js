@@ -27,8 +27,6 @@ function loadCart(){
 function displayCart(jsonCart){
     //Convert JSON to array of product objects
     let cartArray = JSON.parse(jsonCart);
-    console.log(cartArray)
-
     //Create HTML table containing product data
     let htmlStr = '';
     for(let i=0; i<cartArray[0].products.length; ++i){

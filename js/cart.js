@@ -13,6 +13,26 @@ function updateCart() {
 
 }
 
+function updateOrder() {
+//Create request object
+    let itemsorder=0,totalorder=0;
+    let basket = getBasket();//Load or create basket
+    // sending data to server
+    for (let i = 0; i < basket.length; i++) {
+        itemsorder=itemsorder+basket[i].qty;
+        totalorder=totalorder+(itemsorder+basket[i].qty*itemsorder+basket[i].price);
+        }
+    let request = new XMLHttpRequest();
+    request.open("POST", "checkout.php");
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    request.send("cartSession=" + sessionStorage.basket
+        + "&total=" + totalorder
+        + "&items=" + itemsorder);
+    sessionStorage.clear();
+    alert("Order Preceded Thank you");
+
+}
+
 function getProductJson(ProductID) {
     let request = new XMLHttpRequest();
 
@@ -22,7 +42,6 @@ function getProductJson(ProductID) {
         if (request.status === 200) {
             //Get data from server
             let responseData = request.responseText;
-            console.log(responseData);
             if (responseData == "[]" || responseData == "out stock") {
                 toastr.error("Out of stock")
             } else {
@@ -80,6 +99,7 @@ function addToBasket(prodID, prodName, price) {
     //Store in local storage
     sessionStorage.basket = JSON.stringify(basket);
 }
+
 
 
 

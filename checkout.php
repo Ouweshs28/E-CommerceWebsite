@@ -30,7 +30,6 @@ $items = (int)$itemStr;
 //array to store
     $dataArray = [
             "username" => $username,
-            "sessionId" => session_id(),
             "date" => date("Y-m-d"),
             "time" =>date("h:i"),
             "cost"=>$totalcost,

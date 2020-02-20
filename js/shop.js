@@ -4,6 +4,64 @@ $.getScript('./js/checksession.js', function () {
     loadProducts();
 });
 
+"use strict";
+
+//Import recommender class
+import {Recommender} from '../js/recommender.js';
+
+//Create recommender object - it loads its state from local storage
+let recommender = new Recommender();
+
+/* Set up button to call search function. We have to do it here
+    because search() is not visible outside the module. */
+document.getElementById("SearchButton").onclick = search;
+
+//Display recommendation
+window.onload = showRecommendation;
+
+//Searches for products in database
+function search(){
+    //Extract the search text
+    let searchText = document.getElementById("user_query").value;
+
+    //Add the search keyword to the recommender
+    recommender.addKeyword(searchText);
+    showRecommendation();
+
+
+    //Create request object
+    let request = new XMLHttpRequest();
+
+    //Create event handler that specifies what should happen when server responds
+    request.onload = () => {
+        //Check HTTP status code
+        if (request.status === 200) {
+            //Get data from server
+            let responseData = request.responseText;
+
+            //Add data to page
+            displayProducts(responseData);
+
+        } else
+            toastr.error("Error communicating with server: " + request.status);
+    };
+
+    //Set up request with HTTP method and URL
+    request.open("POST", "loadshop.php");
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    //Extract registration data
+    let search = document.getElementById("user_query").value;
+
+    //Send request
+    request.send("search=" + recommender.getTopKeyword()+' '+search);
+}
+
+//Display the recommendation in the document
+function showRecommendation(){
+    document.getElementById("RecomendationDiv").innerHTML = recommender.getTopKeyword();
+}
+
 //Downloads JSON description of products from server
 function loadProducts() {
     //Create request object
@@ -132,32 +190,4 @@ function SortBrand() {
     displayProducts(JSON.stringify(ProductArray));
 }
 
-function search() {
 
-    //Create request object
-    let request = new XMLHttpRequest();
-
-    //Create event handler that specifies what should happen when server responds
-    request.onload = () => {
-        //Check HTTP status code
-        if (request.status === 200) {
-            //Get data from server
-            let responseData = request.responseText;
-
-            //Add data to page
-            displayProducts(responseData);
-
-        } else
-            toastr.error("Error communicating with server: " + request.status);
-    };
-
-    //Set up request with HTTP method and URL
-    request.open("POST", "loadshop.php");
-    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-    //Extract registration data
-    let search = document.getElementById("user_query").value;
-
-    //Send request
-    request.send("search=" + search);
-}

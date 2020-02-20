@@ -45,114 +45,114 @@
 
             </ul><!-- menu Finish -->
 
-            </div><!-- col-md-6 Finish -->
+        </div><!-- col-md-6 Finish -->
 
-        </div><!-- container Finish -->
+    </div><!-- container Finish -->
 
-    </div><!-- Top Finish -->
+</div><!-- Top Finish -->
 
-    <div id="navbar" class="navbar navbar-default">
-        <!-- navbar navbar-default Begin -->
+<div id="navbar" class="navbar navbar-default">
+    <!-- navbar navbar-default Begin -->
 
-        <div class="container">
-            <!-- container Begin -->
+    <div class="container">
+        <!-- container Begin -->
 
-            <div class="navbar-header">
-                <!-- navbar-header Begin -->
+        <div class="navbar-header">
+            <!-- navbar-header Begin -->
 
-                <a href="index.php" class="navbar-brand home">
-                    <!-- navbar-brand home Begin -->
+            <a href="index.php" class="navbar-brand home">
+                <!-- navbar-brand home Begin -->
 
-                    <img src="images/logo.png" alt="Logo" style="height:70px" class="hidden-xs">
+                <img src="images/logo.png" alt="Logo" style="height:70px" class="hidden-xs">
 
 
-                </a><!-- navbar-brand home Finish -->
+            </a><!-- navbar-brand home Finish -->
 
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
 
-                    <span class="sr-only">Toggle Navigation</span>
+                <span class="sr-only">Toggle Navigation</span>
 
-                    <i class="fa fa-align-justify"></i>
+                <i class="fa fa-align-justify"></i>
 
-                </button>
+            </button>
 
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
+
+                <span class="sr-only">Toggle Search</span>
+
+                <i class="fa fa-search"></i>
+
+            </button>
+
+        </div><!-- navbar-header Finish -->
+
+        <div class="navbar-collapse collapse" id="navigation">
+            <!-- navbar-collapse collapse Begin -->
+
+            <div class="padding-nav">
+                <!-- padding-nav Begin -->
+
+                <ul class="nav navbar-nav left">
+                    <!-- nav navbar-nav left Begin -->
+
+                    <li>
+                        <a href="index.php">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="shop.php">Shop</a>
+                    </li>
+                    <li class="myaccount">
+                        <a href="account.php">My Account</a>
+                    </li>
+                    <li id="cartnav">
+                        <a href="cart.php">Shopping Cart</a>
+                    </li>
+                    <li>
+                        <a href="contact.php">Contact Us</a>
+                    </li>
+                    <li id="loginnav">
+                        <a href="login.php">Login</a>
+                    </li>
+
+
+                </ul><!-- nav navbar-nav left Finish -->
+
+            </div><!-- padding-nav Finish -->
+
+            <a href="cart.php" class="btn navbar-btn btn-primary right" id="cartBtn">
+                <!-- btn navbar-btn btn-primary Begin -->
+
+            </a><!-- btn navbar-btn btn-primary Finish -->
+
+            <div class="navbar-collapse collapse right">
+                <!-- navbar-collapse collapse right Begin -->
+
+                <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">
+                    <!-- btn btn-primary navbar-btn Begin -->
 
                     <span class="sr-only">Toggle Search</span>
 
                     <i class="fa fa-search"></i>
 
-                </button>
+                </button><!-- btn btn-primary navbar-btn Finish -->
 
-            </div><!-- navbar-header Finish -->
+            </div><!-- navbar-collapse collapse right Finish -->
 
-            <div class="navbar-collapse collapse" id="navigation">
-                <!-- navbar-collapse collapse Begin -->
+            <div class="collapse clearfix" id="search">
+                <!-- collapse clearfix Begin -->
 
-                <div class="padding-nav">
-                    <!-- padding-nav Begin -->
+                <div class="navbar-form">
+                    <!-- navbar-form Begin -->
 
-                    <ul class="nav navbar-nav left">
-                        <!-- nav navbar-nav left Begin -->
+                    <div class="input-group">
+                        <!-- input-group Begin -->
 
-                        <li>
-                            <a href="index.php">Home</a>
-                        </li>
-                        <li class="active">
-                            <a href="shop.php">Shop</a>
-                        </li>
-                        <li class="myaccount">
-                            <a href="account.php">My Account</a>
-                        </li>
-                        <li id="cartnav">
-                            <a href="cart.php">Shopping Cart</a>
-                        </li>
-                        <li>
-                            <a href="contact.php">Contact Us</a>
-                        </li>
-                        <li id="loginnav">
-                            <a href="login.php">Login</a>
-                        </li>
+                        <input type="text" class="form-control" placeholder="Search" id="user_query" required>
 
-
-                    </ul><!-- nav navbar-nav left Finish -->
-
-                </div><!-- padding-nav Finish -->
-
-                <a href="cart.php" class="btn navbar-btn btn-primary right" id="cartBtn" >
-                    <!-- btn navbar-btn btn-primary Begin -->
-
-                </a><!-- btn navbar-btn btn-primary Finish -->
-
-                <div class="navbar-collapse collapse right">
-                    <!-- navbar-collapse collapse right Begin -->
-
-                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">
-                        <!-- btn btn-primary navbar-btn Begin -->
-
-                        <span class="sr-only">Toggle Search</span>
-
-                        <i class="fa fa-search"></i>
-
-                    </button><!-- btn btn-primary navbar-btn Finish -->
-
-                </div><!-- navbar-collapse collapse right Finish -->
-
-                <div class="collapse clearfix" id="search">
-                    <!-- collapse clearfix Begin -->
-
-                    <div class="navbar-form">
-                        <!-- navbar-form Begin -->
-
-                        <div class="input-group">
-                            <!-- input-group Begin -->
-
-                            <input type="text" class="form-control" placeholder="Search" id="user_query" required>
-
-                            <span class="input-group-btn">
+                        <span class="input-group-btn">
                                 <!-- input-group-btn Begin -->
 
-                                <button onclick="search() "class="btn btn-primary">
+                                <button onclick="search() " id="SearchButton" class="btn btn-primary">
                                     <!-- btn btn-primary Begin -->
 
                                     <i class="fa fa-search"></i>
@@ -161,58 +161,62 @@
 
                             </span><!-- input-group-btn Finish -->
 
-                        </div><!-- input-group Finish -->
+                    </div><!-- input-group Finish -->
 
-                    </div><!-- navbar-form Finish -->
+                </div><!-- navbar-form Finish -->
 
-                </div><!-- collapse clearfix Finish -->
+            </div><!-- collapse clearfix Finish -->
 
-            </div><!-- navbar-collapse collapse Finish -->
+        </div><!-- navbar-collapse collapse Finish -->
 
-        </div><!-- container Finish -->
+    </div><!-- container Finish -->
 
-    </div><!-- navbar navbar-default Finish -->
+</div><!-- navbar navbar-default Finish -->
 
-    <div class="btn-group pull-right" id="sorting">
-        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Sort By <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-            <li><a onclick="PriceAsc()">Price: Ascending</a></li>
-            <li><a onclick="PriceDesc()">Price: Descending</a></li>
-            <li><a onclick="StorageAsc()">Storage: Ascending</a></li>
-            <li><a onclick="StorageDsc()">Storage: Descending</a></li>
-            <li><a onclick="SortBrand()">Brand</a></li>
-        </ul>
-    </div>
+<div class="btn-group pull-right" id="sorting">
+    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+        Sort By <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a onclick="PriceAsc()">Price: Ascending</a></li>
+        <li><a onclick="PriceDesc()">Price: Descending</a></li>
+        <li><a onclick="StorageAsc()">Storage: Ascending</a></li>
+        <li><a onclick="StorageDsc()">Storage: Descending</a></li>
+        <li><a onclick="SortBrand()">Brand</a></li>
+    </ul>
+</div>
 
-    <div class="container py-5">
-        <div class="row text-center text-white mb-5">
-            <div class="col-lg-7 mx-auto">
-                <h1 class="display-4">Product List</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 mx-auto">
-                <!-- List group-->
-                <ul class="list-group shadow" id="shop">
-                    <!-- list group item-->
-               <!-- End -->
-                </ul> <!-- End -->
-            </div>
+<h2>Recommendations</h2>
+<div id="RecomendationDiv"></div>
+
+<div class="container py-5">
+    <div class="row text-center text-white mb-5">
+        <div class="col-lg-7 mx-auto">
+            <h1 class="display-4">Product List</h1>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-12 mx-auto">
+            <!-- List group-->
+            <ul class="list-group shadow" id="shop">
+                <!-- list group item-->
+                <!-- End -->
+            </ul> <!-- End -->
+        </div>
+    </div>
+</div>
 
-    <?php
+<?php
 
-    include("includes/footer.php");
+include("includes/footer.php");
 
-    ?>
-    <script src="js/jquery-331.min.js"></script>
-    <script src="js/shop.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/toastr.js"></script>
-    <script src="js/bootstrap-337.min.js"></script>
+?>
+<script src="js/jquery-331.min.js"></script>
+<script src="js/shop.js" type="module"></script>
+<script src="js/cart.js"></script>
+<script src="js/toastr.js"></script>
+<script src="js/bootstrap-337.min.js"></script>
 
 </body>
 

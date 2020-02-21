@@ -9,7 +9,7 @@ $mongoClient = (new MongoDB\Client);
 $db = $mongoClient->ecommerce;
 
 
-$result = $db->Order->find();
+$result = $db->Orders->find();
 
 $products = array();
 

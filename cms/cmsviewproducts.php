@@ -76,12 +76,12 @@ include('cmsmenu.php');//met to navbar
 
             for (let i = 0; i < array.length; i++) {
                 htmlStr += '<tr>';
-                htmlStr += '<td><img src="' + array[i].Photo + '" style="width:125px;height:125px;"></td>';
+                htmlStr += '<td><img src="../server/images/' + array[i].imageUrl + '" style="width:125px;height:125px;"></td>';
                 htmlStr += '<td>' + array[i]._id.$oid + '</td>';
-                htmlStr += '<td>' + array[i].ProductName + '</td>';
-                htmlStr += '<td>' + array[i].Category + '</td>';
-                htmlStr += '<td>' + array[i].Price + '</td>';
-                htmlStr += '<td>' + array[i].Description + '</td>';
+                htmlStr += '<td>' + array[i].name + '</td>';
+                htmlStr += '<td>' + array[i].brand + '</td>';
+                htmlStr += '<td>' + array[i].price + '</td>';
+                htmlStr += '<td>' + array[i].desc + '</td>';
                 htmlStr += '<td><button class="btn"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></button></td>';
                 htmlStr += '</tr>';
             }

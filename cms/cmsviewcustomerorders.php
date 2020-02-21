@@ -53,6 +53,7 @@ include('cmsmenu.php');//met to navbar
         function displayCmsOrders(jsonProducts) {
 
             var array = JSON.parse(jsonProducts);
+            console.log(jsonProducts);
 
             let htmlStr = "";
             htmlStr += '<table style="text-align:center;" id="OrdersTable">';
@@ -64,10 +65,8 @@ include('cmsmenu.php');//met to navbar
             htmlStr += '<col width="150">';
             htmlStr += '<col width="100">';
             htmlStr += '<tr>';
-            htmlStr += '<th>Photo</th>';
             htmlStr += '<th>ID</th>';
-            htmlStr += '<th>Product Name</th>';
-            htmlStr += '<th>Customer Name</th>';
+            htmlStr += '<th>Username</th>';
             htmlStr += '<th>Quantity</th>';
             htmlStr += '<th>Total Amount</th>';
             htmlStr += '<th>Delete Order</th>';
@@ -75,12 +74,10 @@ include('cmsmenu.php');//met to navbar
 
             for (let i = 0; i < array.length; i++) {
                 htmlStr += '<tr>';
-                htmlStr += '<td><img src="' + array[i].Photo + '" style="width:125px;height:125px;"></td>';
                 htmlStr += '<td>' + array[i]._id.$oid + '</td>';
-                htmlStr += '<td>' + array[i].ProductName + '</td>';
-                htmlStr += '<td>' + array[i].CustomerName + '</td>';
-                htmlStr += '<td>' + array[i].Quantity + '</td>';
-                htmlStr += '<td>' + array[i].TotalAmount + '</td>';
+                htmlStr += '<td>' + array[i].username + '</td>';
+                htmlStr += '<td>' + array[i].items + '</td>';
+                htmlStr += '<td>' + array[i].cost + '</td>';
                 htmlStr += '<td><i class="fa fa-trash fa-2x" aria-hidden="true"></i></td>';
                 htmlStr += '</tr>';
             }

@@ -306,15 +306,6 @@
 
                     </div><!-- form-group Finish -->
 
-                    <div class="form-group">
-                        <!-- form-group Begin -->
-
-                        <label>Your Profile Picture</label>
-
-                        <input type="file" class="form-control form-height-custom" name="c_image">
-
-                    </div><!-- form-group Finish -->
-
                     <div class="text-center">
                         <!-- text-center Begin -->
 

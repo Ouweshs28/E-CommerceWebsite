@@ -21,13 +21,6 @@ window.onload = showRecommendation;
 
 //Searches for products in database
 function search(){
-    //Extract the search text
-    let searchText = document.getElementById("user_query").value;
-
-    //Add the search keyword to the recommender
-    recommender.addKeyword(searchText);
-    showRecommendation();
-
 
     //Create request object
     let request = new XMLHttpRequest();
@@ -52,9 +45,13 @@ function search(){
 
     //Extract registration data
     let search = document.getElementById("user_query").value;
+    //Extract the search text
+    //Add the search keyword to the recommender
+    recommender.addKeyword(search);
+    showRecommendation();
 
     //Send request
-    request.send("search=" + recommender.getTopKeyword()+' '+search);
+    request.send("search="+search);
 }
 
 //Display the recommendation in the document
@@ -64,6 +61,7 @@ function showRecommendation(){
 
 //Downloads JSON description of products from server
 function loadProducts() {
+
     //Create request object
     let request = new XMLHttpRequest();
 
@@ -78,8 +76,9 @@ function loadProducts() {
     };
 
     //Set up request and send it
-    request.open("GET", "loadshop.php");
-    request.send();
+    request.open("POST", "loadshop.php");
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    request.send("search="+recommender.getTopKeyword());
 }
 
 //Loads products into page

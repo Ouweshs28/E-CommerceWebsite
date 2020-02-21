@@ -1,0 +1,77 @@
+#viewProds-main {
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 0.25px black;
+  width: 100%;
+  /*View height requirement*/
+  min-height: 97vh;
+  border: 1px solid black;
+}
+
+h3 {
+  font-family: Raleway;
+  font-size: 5em;
+}
+
+#viewProds-Table {
+  margin-left: 315px;
+  width: 880px;
+  margin-top: 30px;
+  color: #eee6e6;
+}
+
+#Products {
+  /*Display as inline-block*/
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table tr {
+  border-bottom: 1px solid rgba(211, 211, 211, 0.65);
+  padding: 5px;
+}
+
+tr.spaceUnder > td,
+tr.spaceUnder > th {
+  /*Space under each row*/
+  padding-bottom: 1em;
+}
+
+button {
+  background-color: #00aaf7;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  font-family: Raleway;
+  font-size: 30px;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.cmsbackbutton {
+  background-color: #011d96;
+  padding: 14px 20px;
+  border-radius: 100px;
+  margin: 8px 8px;
+  width: 40%;
+}
+
+.btn {
+  background-color: #26384b;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #6c747d;
+}

@@ -2,6 +2,8 @@ let ProductArray;
 //Download products when page loads
 $.getScript('./js/checksession.js', function () {
     loadProducts();
+    //Display recommendation
+    showRecommendation();
 });
 
 "use strict";
@@ -15,11 +17,102 @@ let recommender = new Recommender();
 /* Set up button to call search function. We have to do it here
     because search() is not visible outside the module. */
 document.getElementById("SearchButton").onclick = search;
+document.getElementById("priceasc").onclick = PriceAsc;
+document.getElementById("pricedesc").onclick = PriceDesc;
+document.getElementById("storageasc").onclick = StorageAsc;
+document.getElementById("storagedesc").onclick = StorageDsc;
+document.getElementById("sortbrand").onclick = SortBrand;
 
-//Display recommendation
-window.onload = showRecommendation;
+
+
 
 //Searches for products in database
+
+function PriceDesc() {
+    let needsort = true;
+    for (let i = 1; i < ProductArray.length && needsort; i++) {
+        needsort = false;
+        for (let j = 0; j < ProductArray.length - 1; j++) {
+            if (ProductArray[j].price < ProductArray[j + 1].price) {
+                let temp = ProductArray[j + 1];
+                ProductArray[j + 1] = ProductArray[j];
+                ProductArray[j] = temp;
+                needsort = true;
+            }
+
+        }
+    }
+    displayProducts(JSON.stringify(ProductArray));
+}
+
+function PriceAsc() {
+    let needsort = true;
+    for (let i = 1; i < ProductArray.length && needsort; i++) {
+        needsort = false;
+        for (let j = 0; j < ProductArray.length - 1; j++) {
+            if (ProductArray[j].price > ProductArray[j + 1].price) {
+                let temp = ProductArray[j + 1];
+                ProductArray[j + 1] = ProductArray[j];
+                ProductArray[j] = temp;
+                needsort = true;
+            }
+
+        }
+    }
+    displayProducts(JSON.stringify(ProductArray));
+}
+
+function StorageDsc() {
+    let needsort = true;
+    for (let i = 1; i < ProductArray.length && needsort; i++) {
+        needsort = false;
+        for (let j = 0; j < ProductArray.length - 1; j++) {
+            if (ProductArray[j].storage > ProductArray[j + 1].storage) {
+                let temp = ProductArray[j + 1];
+                ProductArray[j + 1] = ProductArray[j];
+                ProductArray[j] = temp;
+                needsort = true;
+            }
+
+        }
+    }
+    displayProducts(JSON.stringify(ProductArray));
+}
+
+function StorageAsc() {
+    let needsort = true;
+    for (let i = 1; i < ProductArray.length && needsort; i++) {
+        needsort = false;
+        for (let j = 0; j < ProductArray.length - 1; j++) {
+            if (ProductArray[j].storage < ProductArray[j + 1].storage) {
+                let temp = ProductArray[j + 1];
+                ProductArray[j + 1] = ProductArray[j];
+                ProductArray[j] = temp;
+                needsort = true;
+            }
+
+        }
+    }
+    displayProducts(JSON.stringify(ProductArray));
+}
+
+function SortBrand() {
+    let needsort = true;
+    for (let i = 1; i < ProductArray.length && needsort; i++) {
+        needsort = false;
+        for (let j = 0; j < ProductArray.length - 1; j++) {
+            if ((ProductArray[j].brand).localeCompare(ProductArray[j + 1].brand) > 0) {
+                let temp = ProductArray[j + 1];
+                ProductArray[j + 1] = ProductArray[j];
+                ProductArray[j] = temp;
+                needsort = true;
+            }
+
+        }
+    }
+    displayProducts(JSON.stringify(ProductArray));
+}
+
 function search(){
 
     //Create request object
@@ -104,89 +197,6 @@ function displayProducts(jsonProducts) {
     document.getElementById("shop").innerHTML = htmlStr;
 }
 
-function PriceDesc() {
-    let needsort = true;
-    for (let i = 1; i < ProductArray.length && needsort; i++) {
-        needsort = false;
-        for (let j = 0; j < ProductArray.length - 1; j++) {
-            if (ProductArray[j].price < ProductArray[j + 1].price) {
-                let temp = ProductArray[j + 1];
-                ProductArray[j + 1] = ProductArray[j];
-                ProductArray[j] = temp;
-                needsort = true;
-            }
 
-        }
-    }
-    displayProducts(JSON.stringify(ProductArray));
-}
-
-function PriceAsc() {
-    let needsort = true;
-    for (let i = 1; i < ProductArray.length && needsort; i++) {
-        needsort = false;
-        for (let j = 0; j < ProductArray.length - 1; j++) {
-            if (ProductArray[j].price > ProductArray[j + 1].price) {
-                let temp = ProductArray[j + 1];
-                ProductArray[j + 1] = ProductArray[j];
-                ProductArray[j] = temp;
-                needsort = true;
-            }
-
-        }
-    }
-    displayProducts(JSON.stringify(ProductArray));
-}
-
-function StorageAsc() {
-    let needsort = true;
-    for (let i = 1; i < ProductArray.length && needsort; i++) {
-        needsort = false;
-        for (let j = 0; j < ProductArray.length - 1; j++) {
-            if (ProductArray[j].storage > ProductArray[j + 1].storage) {
-                let temp = ProductArray[j + 1];
-                ProductArray[j + 1] = ProductArray[j];
-                ProductArray[j] = temp;
-                needsort = true;
-            }
-
-        }
-    }
-    displayProducts(JSON.stringify(ProductArray));
-}
-
-function StorageDsc() {
-    let needsort = true;
-    for (let i = 1; i < ProductArray.length && needsort; i++) {
-        needsort = false;
-        for (let j = 0; j < ProductArray.length - 1; j++) {
-            if (ProductArray[j].storage < ProductArray[j + 1].storage) {
-                let temp = ProductArray[j + 1];
-                ProductArray[j + 1] = ProductArray[j];
-                ProductArray[j] = temp;
-                needsort = true;
-            }
-
-        }
-    }
-    displayProducts(JSON.stringify(ProductArray));
-}
-
-function SortBrand() {
-    let needsort = true;
-    for (let i = 1; i < ProductArray.length && needsort; i++) {
-        needsort = false;
-        for (let j = 0; j < ProductArray.length - 1; j++) {
-            if ((ProductArray[j].brand).localeCompare(ProductArray[j + 1].brand) > 0) {
-                let temp = ProductArray[j + 1];
-                ProductArray[j + 1] = ProductArray[j];
-                ProductArray[j] = temp;
-                needsort = true;
-            }
-
-        }
-    }
-    displayProducts(JSON.stringify(ProductArray));
-}
 
 

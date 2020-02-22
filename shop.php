@@ -179,11 +179,11 @@
         Sort By <span class="caret"></span>
     </button>
     <ul class="dropdown-menu">
-        <li><a onclick="PriceAsc()">Price: Ascending</a></li>
-        <li><a onclick="PriceDesc()">Price: Descending</a></li>
-        <li><a onclick="StorageAsc()">Storage: Ascending</a></li>
-        <li><a onclick="StorageDsc()">Storage: Descending</a></li>
-        <li><a onclick="SortBrand()">Brand</a></li>
+        <li><a id="priceasc" onclick="PriceAsc()">Price: Ascending</a></li>
+        <li><a id="pricedesc" onclick="PriceDesc()">Price: Descending</a></li>
+        <li><a id="storageasc" onclick="StorageAsc()">Storage: Ascending</a></li>
+        <li><a id="storagedesc" onclick="StorageDsc()">Storage: Descending</a></li>
+        <li><a id="sortbrand" onclick="SortBrand()">Brand</a></li>
     </ul>
 </div>
 

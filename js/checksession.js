@@ -59,6 +59,8 @@ function logout(){
     //Set up and send request
     request.open("GET", "logout.php");
     request.send();
+    sessionStorage.clear();
+    localStorage.clear();
     window.location.href="index.php";
 }
 

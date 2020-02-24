@@ -1,0 +1,1283 @@
+/*---------------------------------Home Styling--------------------------------------*/
+/*importing necessary google font*/
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+@import 'https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Pacifico&display=swap';
+body { /* home page main color*/
+	margin:0;
+	padding:0;
+	background-color:#f2f2f2;
+}
+header { /*header image*/
+ background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("imaging2/abc.jpg");
+ height: 100vh;
+ background-attachment: fixed;
+background-position: center;
+ background-size: cover;
+
+}
+/*Navbar properties*/
+nav p{
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 24px;
+  line-height: 10px;
+  float: left;
+  padding: 6px 20px;
+}
+a{
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/*nav-area stylings*/
+.nav-area{
+	background-color:rgb(64, 64, 64,0.5);
+  height: 60px;
+  display: block;
+}
+/*nav-area list stylings*/
+.nav-area ul{
+  list-style: none;
+  margin: 0;
+
+  margin-right: 80px;
+ padding-top: 6px;
+}
+.nav-area > ul > li{
+  float: left;
+  position: relative;
+}
+.nav-area ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+}
+/*nav-area hover effects*/
+.nav-area ul li:hover a{
+  background:rgb(64, 64, 64,0.5);
+}
+.nav-area ul ul{
+  position: absolute;
+  padding: 0;
+  min-width: 160px;
+  display: none;
+  top: 100%;
+  left: 0;
+}
+.nav-area ul li:hover > ul{
+  display: block;
+}
+.nav-area ul ul li:hover a{
+  background:rgb(64, 64, 64,0.5);
+}
+.nav-area ul ul li{
+  position: relative;
+}
+.nav-area ul ul ul{
+  top: 0;
+  left: 100%;
+}
+.nav-area ul ul ul li:hover a{
+  background:rgba(54,61,101,0.5);
+}
+/*Search bar styling*/
+#search{
+width: 250px;
+position:absolute;
+margin-left: 480px;
+-webkit-border-radius: 25px;
+border-radius:25px;
+border:none;
+	font-size: 13px;
+	text-align:center; 
+	bottom:-60px;
+	 padding: 10px;
+}
+/*banner heading span styling */
+
+h1 {
+padding-top: 10vh;
+margin-right: 50px;;
+  text-align: right;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 1.1em;
+  color:#f2f2f2;
+}
+
+h1 span.smallVertical {
+  font-size:10px;
+  letter-spacing: 0.1em; 
+  color:#f2f2f2;
+  display: inline-block;      
+  transform: rotate(-90deg) translateY(50%);/* Add: translateY 50% */
+  width: 8em;                    
+  text-align:center;             
+  vertical-align:top;            
+  white-space: nowrap; /* prevent small text wrap at 8em */
+}
+h2 span.Text {
+  color: #f2f2f2;
+}
+/*styling statements on home page*/
+.statement {
+font-family: 'Oswald', sans-serif;
+font-size:16px;
+letter-spacing: 0.1em; 
+color:black;
+ margin-top: 30px;
+ margin:30px;
+ position: absolute;
+ text-align: center;
+ 
+}
+
+/*first box with image contents+ styling*/
+.first .box1{
+margin-left: 100px;
+margin-right:100px;
+margin-top:-80px;
+	box-sizing:border-box;
+	background:#262626;
+	border-radius:4px;
+	box-shadow: 0 5px 15px rgba(0,0,0,5);
+	display:flex;
+	
+}
+/*image positioning by flex*/
+.first .box1 .imgBx1 {
+   
+width :400px;
+flex: 0 0 400px;
+}
+.first .box1 .imgBx1 img{
+   
+	max-width:100%;
+}
+/*tyling of contents heading paragraphs*/
+.first .box1 .content1{
+  text-align:center;
+	padding-left:20px;
+}
+
+.first .box1 .content1 h3{
+    position: absolute;
+    margin-top: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-size:30px;
+     color: #f2f2f2;
+   }
+
+   .first .box1 .content1 p{
+    margin-top: 160px;
+    font-family:'Oswald', sans-serif;
+     color: #f2f2f2;
+   }
+
+   .first .box1 .content1 h4{
+    position: absolute;
+    margin-top:40px;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size:20px;
+    color: #f2f2f2;
+   }
+/*second box of contents styling+ image positioning*/
+ .second .box{
+margin-left: 100px;
+margin-right:100px;
+
+    box-sizing:border-box;
+	background:#262626;
+	box-shadow: 0 5px 15px rgba(0,0,0,5);
+	display:flex;
+	
+}
+/*second container styling of headings paragraph image*/
+/*image positioning by flex*/
+.second .box .imgBx {
+width :400px;
+	flex: 0 0 400px;
+}
+.second .box .imgBx img{
+	max-width:100%;
+}
+.second .box .content{
+	padding-left:20px;
+}
+.second .box .content span{
+    position: absolute; 
+   margin-top: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-size:15px;
+    color: #f2f2f2;
+}
+.second .box .content h2{
+    position: absolute;
+    margin-top: 90px;
+       font-family: 'Oswald', sans-serif;
+       font-size:30px;
+       color: #f2f2f2;
+   }
+   .second .box .content p{
+    position: absolute;
+    margin-top: 150px;
+    font-family: 'Oswald', sans-serif;
+    font-size:15px;
+    color: #f2f2f2;
+   }
+
+/*section for sunglasses image hover*/
+ .sunglasses{
+     margin-top:100px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgb(38, 38, 38,0.5)), url("imaging2/grey.jpg");
+    height: 90vh;
+     background-attachment: fixed;
+     background-size: cover;
+    
+   }
+   /*heading + price span stylings*/
+   .sunglasses h5 {
+   
+       font-family: 'Oswald', sans-serif;
+       font-size:25px;
+       color: #f2f2f2;
+       text-align: center;
+   }
+   .sunglasses p {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:15px;
+       text-align: center;
+   }
+   .sunglasses span{
+       color: #f2f2f2;
+       font-size:15px;
+       text-align:center;
+   }
+/* Make the container relative */
+.swap-on-hover {
+   position: relative;	
+  }
+  /* Select the image and make it absolute to the container */
+  .swap-on-hover img {
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+    /* Sets the width and height for the images*/
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+      
+  }
+  
+ /*swapping styling and transition timer*/
+  .swap-on-hover .swap-on-hover__front-image {
+    z-index: 9999;
+    transition: opacity .5s linear;
+    cursor: pointer;
+  }
+  .swap-on-hover:hover > .swap-on-hover__front-image{
+    opacity: 0;
+  }
+  /* postion of rows and columns*/ 
+ .sunglasses .row {
+      margin-left: -5vh;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+ .sunglasses .column {
+    height: 50%;
+    width: 50%;
+    text-align: center;
+  }
+  /*branding contents rows and colums positioning of images*/
+ .brands .row {
+    margin-top:50px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+  
+  }
+ .brands .column {
+    height: 50%;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .brands h6{
+    font-family: 'Oswald', sans-serif;
+    font-size:30px;
+    color: #595959;
+    text-align: center;
+
+  }
+/*Contact section stylings*/
+.contact{
+    margin-top:-250px
+}
+
+.contact  *{ box-sizing: border-box;
+}
+/* Style inputs */
+ input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;  
+  font-family: 'Oswald', sans-serif;
+}
+ input[type=submit] {
+    font-family: 'Oswald', sans-serif;
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+ input[type=submit]:hover {
+  background-color: grey;
+}
+/* Style the container/contact section */
+ .container9 {
+  border-radius: 5px;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgb(38, 38, 38,0.5)), url("imaging2/grey.jpg");
+  padding: 10px;
+  height: 80vh;
+  top: -80px;
+  position:relative;
+  background-attachment: fixed;
+  background-size: cover;
+}
+ .container9 label{
+    color: white;
+}
+/* Create two columns that float next to each other */
+
+ .column {
+  float: left!important;
+  width: 50% !important;
+  margin-top: 6px !important;
+  padding: 20px;
+}
+/* Clear floats after the columns */
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ /*styling of submit button*/
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+/*styling of footer*/
+ footer{
+    background-color: #262626;
+    color: #aba8a8;
+    height: 50vh;
+}
+/*styling footer rows and columns*/
+ footer .row{
+	position:relative;
+  top:-40px;
+  height: 250px;
+  display: flex;
+}
+
+ footer .row .column-section {
+    flex: 1;
+    padding: 50px; 
+}
+
+ .footer-widget {
+   margin: 0 10px;
+   text-align: justify;
+}
+/*styling statements of Brilliant on the left side*/
+ .widget-title {
+position:relative;
+ color: #fff;
+ bottom:-40px;
+text-transform: uppercase;
+ font-size: 15px;   
+}
+
+ .abt-widget p {
+
+line-height: 20px;
+margin: 10px 0 30px 0;
+position:relative;
+bottom:-50px;
+}
+/*styling of icons of cards at the bottom*/
+ .cards i{
+    position:relative;
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 12px;
+    bottom:-60px;
+    color:grey;
+}
+ .abt-widget p span {
+    margin-right: 10px;
+}
+.footer-widget ul {
+margin-left: 20px;
+}
+/*styling second row of footer*/
+.footer-widget ul li {
+position:relative;
+bottom:-40px;
+ padding-bottom: 10px;
+    
+}
+
+.footer-widget ul li a {
+    color: #aba8a8;
+    text-decoration: none;
+ 
+}
+/*adding hover effects to second row*/
+.footer-widget ul li a:hover {
+    color: #d2d2d2;
+    margin-left: 10px;
+    transition: all .5s ease;
+
+}
+/*styling statements for third row of footer*/
+ .contact-number, .contact-email {
+  position:relative;
+  bottom:-50px;
+margin: 10px 0;
+
+}
+.contact-address span{
+    position:relative;
+    bottom:-50px;
+}
+/*styling social medias icons*/
+.social-widget a {
+    display: inline-block;
+    font-size: 20px;
+    color: #aba8a8;
+    margin-right: 10px;
+    position:relative;
+    bottom:-50px;
+}
+/*hover effect of social medias icon*/
+ .social-widget a:hover {
+    color: #d2d2d2;
+    transition: all .5s ease; 
+}
+/*styling las line of footer*/
+ .copyright{
+    background-color: white;
+    padding: 10px;
+}
+
+.copyright p{
+
+    color: #000;
+    text-align: center; 
+}
+
+/*-------------------------------------MY USER ACCOUNT CSS------------------------------------------------------------*/
+
+/*importing font used*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+/*GLobal settings for page */
+.a *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+/*styling and positioning of first container to the left*/
+.a .wrapper{
+
+ margin-top:20px;
+ margin-bottom: 20px;
+ margin-left:60px;
+  width: 450px;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+
+.a .wrapper .left{
+  width: 35%;
+  background: linear-gradient(to right, white, rgb(19, 20, 20) );
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+/*styling image of user card profile*/
+.a .wrapper .left img{
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+/*styling statements and headings*/
+.a .wrapper .left h1{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.a .wrapper .left p{
+  font-size: 12px;
+}
+/*styling right side of fist container with user's information*/
+.a .wrapper .right{
+  width: 65%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.a .wrapper .right .info
+{
+  margin-bottom: 25px;
+}
+
+.a .wrapper .right .info h2
+{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+/*styling of different datas for user*/
+.a .wrapper .right .info-data .data
+{
+  width: 45%;
+}
+.a .wrapper .right .info-data .data h1
+{
+    color: gray;
+    margin-bottom:9px;
+}
+.a .wrapper .right .info-data .data p
+{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #919aa3;
+}
+/*styling editing section for user profile input*/
+.a .edits{
+    position:absolute;
+    width: 50%;
+    left: 600px;
+    top: 600px;
+}
+.a input[type=text], input[type=submit] {
+    width:30%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+ .a input[type=submit] {
+ margin-left:60px;
+ width:20vh;
+  }
+
+/*--------------------------------shopping css page---------------------------------------------------------*/
+/*importing  used fonts*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+/*global settings for page*/
+.b *{
+  margin: 0;
+  padding: 0;
+}
+/*styling short nav bar for shop sunglasses categories*/
+/*styling button for drop-down for  sorting*/
+.b .dropbtn {
+  color: grey;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.b .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.b .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.b .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/*adding hover effects to button */
+.b .dropdown-content a:hover {
+	background-color: #f1f1f1;
+  text-decoration: none;
+  color:grey;
+  }
+
+.b .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.b .dropdown:hover .dropbtn {
+  background-color: white;
+}
+.b ul {
+	
+	position:absolute;
+ bottom:-80px;
+ list-style-type: none;
+ width:70%;
+left: 100px;
+ padding: 9px 0px;
+
+}
+/*styling of product categories*/
+.b p{
+ display: inline;
+font-size:15px;
+color:grey;
+}
+.b li {
+ text-align: right;
+ display: inline;
+}
+
+.b li a {
+ color: grey;
+ padding: 9px 17px;
+ text-decoration: none;
+}
+
+/* When the link is hovered on, its color will change */
+.b li a:hover {
+ text-decoration: none;
+ color: grey;
+}
+.b .active {
+ background-color: #fff;
+}
+/*styling containers for each sections in the shop*/
+.b .container4{
+	width:100%;
+	margin-top:10%;
+	font-family: sans-serif;
+	letter-spacing:1px;	
+}
+/*styling heading of each sections*/
+.b  .container4 h2{
+font-family: 'Source Code Pro', monospace;
+	background:black;
+	color:#fff;
+	width:150px;
+	font-size:16px;
+	padding:5px;
+	height: 40px;
+	margin-left: 10px;
+}
+/*styling rows and images of products*/
+.b .row{
+	margin-top:30px;
+	
+}
+
+
+/*.b img{
+	width:100%;
+} */
+/*styling products' description*/
+.b .product-bottom h3{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.b .product-bottom h5{
+	font-size:15px;
+	padding-bottom: 10px;
+}
+/*overlay styling for icons on image products*/
+.b .overlay{
+display:block;
+opacity:0;
+	position:absolute;
+	top:10%;
+	margin-left:0;
+	width:70px;
+}
+
+/*appeara when hover effects*/
+.b .product-top:hover .overlay{
+	opacity:1;
+	margin-left: 5%;
+	transition: 0.5s;
+}
+/*styling and positioning of icons*/
+.b .overlay .fa{
+cursor:pointer;
+background-color: #fff;
+color:#000;
+height:35px;
+width: 35px;
+font-size:20px;
+padding: 7px;
+margin:5%;
+margin-bottom:5%;	
+}
+/*styling background transparency for icons on image */
+.b .overlay .btn-secondary{
+	background:transparent !important;
+	border:none !important;
+	box-shadow:none !important;	
+}
+
+/*------------------------  MY ORDER CSS PAGE ------------------------------------------------------------------------*/
+
+/*styling of main body */
+.e body {
+ -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  background-color: #fff;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  margin: 0 auto;
+}
+/*styling statements on home page*/
+.e .basket{
+margin: 0 auto;
+}
+/*styling statements and headings*/
+.e p {
+  margin: 0.75rem 0 0;
+}
+.e h1 {
+  font-size: 0.75rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/*stylings of images and  headings+ statements*/
+.e img,
+.e .basket-module,
+.e .basket-labels,
+.e .basket-product {
+  width: 100%;
+}
+.e .basket-labels,
+.e .item,
+.e .price,
+.e .quantity,
+.e .subtotal,
+.e .basket-product,
+.e .product-image,
+.e .product-details {
+  float: left;
+}
+/*styling main container*/
+.e main {
+  font-size: 0.75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem 0;
+  width: 960px;
+}
+/*styling with of basket*/
+.e .basket {
+  width: 70%;
+}
+.e label {
+  display: block;
+  margin-bottom: 0.3125rem;
+}
+.e .basket-labels {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 1.625rem;
+}
+.e ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.e li {
+  color: #111;
+  display: inline-block;
+  padding: 0.625rem 0;
+}
+/*styling of items*/
+.e .item {
+  width: 55%;
+}
+.e .price,
+.e .quantity,
+.e .subtotal {
+  width: 15%;
+}
+.e .subtotal {
+  text-align: right;
+}
+.e .item-heading {
+    
+  padding-left: 4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*styling of product found in container*/
+.e .basket-product {
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+  color:grey;
+  position: relative;
+}
+/*styling 0f product image*/
+.e .product-image {
+  width: 35%;
+}
+/*styling of product image*/
+.e .product-details {
+  width: 65%;
+}
+/*styling of product-frame*/
+.e .product-frame {
+   height: 100px;
+}
+
+.e .product-details {
+  padding: 0 3em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*styling of quantity field*/
+.e .quantity-field {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 0.625rem;
+  padding: 2px;
+  width: 3.75rem;
+}
+
+.e .title {
+  font-weight: bold;
+  position:absolute;
+top:700px;
+  text-transform: uppercase;
+}
+ /*-----------------------------------------------------CART CSS----------------------------------------*/
+
+    
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+/*page global settings*/
+.s body {
+	  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  background-color: #fff;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  margin: 0 auto;
+}
+/*container for cart prices +images */
+.s .basket{
+margin: 0 auto;
+width: 70%;
+}
+.s p {
+  margin: 0.75rem 0 0;
+}
+/*contents stylings : heading + buttons*/
+.s h1 {
+  font-size: 0.75rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+.s button {
+  border: 0 none;
+  outline: 0 none;
+}
+
+.s button {
+  background-color: #666;
+  color: #fff;
+}
+/* hover and focus effect on button*/
+.s button:hover,
+.s button:focus {
+  background-color: #555;
+}
+.s img,
+.s .basket-module,
+.s .basket-labels,
+.s .basket-product {
+  width: 100%;
+}
+/* contents of the left part*/
+.s button,
+.s .basket-labels,
+.s .item,
+.s .price,
+.s .quantity,
+.s .subtotal,
+.s .basket-product,
+.s .product-image,
+.s .product-details {
+  float: left;
+}
+.s .hide {
+  display: none;
+}
+.s main {
+  clear: both;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem 0;
+  width: 960px;
+}
+.s label {
+  display: block;
+  margin-bottom: 0.3125rem;
+}
+.s .basket-labels {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 1.625rem;
+}
+/*sub title: price quantity etc..*/
+.s ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.s li {
+  color: #111;
+  display: inline-block;
+  padding: 0.625rem 0;
+}
+.s li.price:before,
+.s li.subtotal:before {
+  content: '';
+}
+.s .item {
+  width: 55%;
+}
+.s .price,
+.s .quantity,
+.s .subtotal {
+  width: 15%;
+}
+.s .subtotal {
+  text-align: right;
+}
+/*remove link*/
+.s .remove {
+  bottom: 1.125rem;
+  float: right;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  width: 45%;
+}
+.s .remove button {
+  background-color: transparent;
+  color: black;
+  float: none;
+  font-size:10px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+/*styling and positioning icons*/
+.s .item-heading {
+  padding-left: 4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*styling products in basket*/
+.s .basket-product {
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+  color:grey;
+  position: relative;
+}
+/*styling image, product frame width*/
+.s .product-image {
+  width: 35%;
+}
+.s .product-details {
+  width: 65%;
+}
+.s .product-frame {
+   height: 100px;
+}
+.s .product-details {
+  padding: 0 3em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*styling of price quantity etc..*/
+.s .quantity-field {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 0.625rem;
+  padding: 2px;
+  width: 3.75rem;
+}
+.s .check{
+	position:relative;
+	margin-left: 565px;
+	margin-top: 15px;	
+}
+
+.s a:link, a:visited {
+  background-color:grey;
+  border-radius:4px;
+  color: white;
+  font-size:14px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.s .total-value {
+  text-align: right;
+  color:black;
+}
+.s .title {
+  font-weight: bold;
+  position:absolute;
+top:930px;
+  text-transform: uppercase;
+}
+ /*-----------------------------------------------SIGN-IN CSS -------------------------------------------*/
+    .z *{
+      padding:0px;
+      margin:0px;
+    }
+    /*container styling for h1 and p*/
+   .z .all .square {
+      position:absolute;
+      z-index:-2;
+      margin-left: 45px;
+      margin-top:80px;
+      border-style:solid;
+      width: 200px;
+      height: 80px;
+      Background:black;
+      padding:150px;
+    }
+    /*heading, hr ,h1 and p stylings*/
+    .z .register-info-box h1{
+      margin-left: 20px;
+      margin-top:-100px;
+      font-size: 20px;
+          font-family: sans-serif;
+          color:white;
+          float:right;
+      }
+      .z .register-info-box p{
+          margin-top:5px;
+          font-size: 13px;
+          font-family: sans-serif;
+          color:grey;
+          text-align: center;
+      }
+  .z .register-info-box hr{
+    margin-top: 9px;
+      }
+    .z .container2{
+      margin: 2em 5em 0 auto;
+      left:0; right:0;
+      width: 50%;	
+      height:600px;
+      background: #fff;
+      border: 2px solid #fff;
+      box-shadow: 0 15px 40px rgba(0,0,0, 0.5);    
+        }
+        /* styling second container with users' input  and image*/
+      .z .container2 .left{
+     float:left;  
+      width:50%;
+      height:530px;
+      background: url(imaging2/line2.jpg);
+      background-size:cover;
+      box-sizing:border-box;
+    }
+    .z .container2 .right{
+      float:right;
+      width:50%;
+      height:400px;
+          box-sizing:border-box;
+    }
+    /*formBox for user input stylings*/
+    .z .formBox{
+    width:100%;
+    padding: 80px 40px;
+    box-sizing:border-box;
+    height: 400px;
+    background:#fff;		
+    }
+    .z .formBox p{
+    position:relative;
+    margin:	0;
+    padding:0;
+    font-weight:bold;
+    color: #262626;
+    float: left; 
+    }
+    .z .formBox a{
+      color:grey;
+      text-decoration:none;
+    }
+    .z .formBox input{
+   margin-bottom: 10px;
+    width: 100% 
+    }
+    /*styling of user input fields..*/
+    .z input[type=text],input[type=number], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border:none;
+      box-sizing: border-box;
+      border-bottom: 2px solid grey;
+      font-family:sans-serif;
+    }
+     /*styling of user input button..*/
+    .z input[type=submit]{
+      background-color: black;
+      color:white;
+      padding: 10px 15px;
+      margin: 8px 0;
+      cursor: pointer;
+      width: 100%;
+    }
+   
+  
+/*-----------------------------------------------------LOGIN CSS-------------------------------------------------------------*/
+ /*global settings for page*/
+.i *{
+  padding:0px;
+  margin:0px;
+}
+ /*container styling for h1 and p*/
+.i .all .square {
+  position:absolute;
+  z-index:-2;
+  margin-left: 45px;
+  margin-top:80px;
+  border-style:solid;
+  width: 200px;
+  height: 80px;
+  Background:black;
+  padding:150px;
+}
+    /*heading, hr ,h1 and p stylings*/
+.i .register-info-box h1{
+  margin-left: 20px;
+  margin-top:-100px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color:white;
+  text-align:center;
+  }
+ .i .register-info-box p{
+      margin-top:10px;
+      font-size: 13px;
+      font-family: sans-serif;
+      color:grey;
+      text-align: center;
+  }
+.i .register-info-box hr{
+   margin-top: 9px;
+  }
+/* container for user input fields and image*/
+.i .container2{
+  margin: 2em 5em 0 auto;
+   left:0; right:0;
+    width: 50%;	
+    height:530px;
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0, 0.5);   
+    }
+/* container with image*/
+  .i .container2 .left{
+    float:left;   
+  width:50%;
+  height:500px;
+  background: url(imaging2/line2.jpg);
+  background-size:cover;
+  box-sizing:border-box;
+}
+.i .container2 .right{
+  float:right;
+  width:50%;
+  height:400px;
+  box-sizing:border-box;
+}
+  /*formBox styling*/    
+.i .formBox{
+width:100%;
+padding: 80px 40px;
+box-sizing:border-box;
+height: 400px;
+background:#fff;		
+}
+.i .formBox a{
+  color:grey;
+text-decoration:none;
+}
+/*styling of user input fields..*/
+.i input[type=text], input[type=password] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border:none;
+box-sizing: border-box;
+ border-bottom: 2px solid grey;
+ outline:none;
+font-family: sans-serif;
+}
+/* Styling button*/  
+.i input[type=submit] {
+background-color: black;
+color: white;
+padding: 15px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
